@@ -238,6 +238,27 @@ function DropdownMenuSubContent({
   )
 }
 
+interface DropdownBtnProps {
+  children: React.ReactNode;
+}
+
+export function DropdownBtn({ children }: DropdownBtnProps) {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        {children}
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-36" align="end">
+        <DropdownMenuGroup>
+          <DropdownMenuItem>5 adults</DropdownMenuItem>
+          <DropdownMenuItem>6 adults</DropdownMenuItem>
+          <DropdownMenuItem>7 adults</DropdownMenuItem>
+        </DropdownMenuGroup>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
+
 export {
   DropdownMenu,
   DropdownMenuPortal,

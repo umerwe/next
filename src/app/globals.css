@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-signature: var(--signature);
+  --color-aqua: var(--aqua);
+  --color-blue: var(--blue);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -44,6 +47,12 @@
 }
 
 :root {
+  --signature: var(--aqua);
+  --aqua: oklch(0.74 0.1478 169.16);
+  --blue: oklch(0.67 0.1788 247.92);
+  --dark: oklch(0.22 0.0383 249.94);
+  --gradient-button: linear-gradient(270deg, var(--aqua), var(--blue));
+  --gradient-header: linear-gradient(270deg, var(--dark), var(--aqua));
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -76,6 +85,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+   --font-poppins: 'Poppins', sans-serif;
 }
 
 .dark {
@@ -116,7 +126,38 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  @layer utilities {
+    .bg-header {
+      background: var(--gradient-button);
+      /* background: var(--gradient-header); */
+    }
+
+    .bg-button {
+      background: var(--gradient-button);
+    }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  /* ✅ OKLCH used directly */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  /* ✅ Use OKLCH directly */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
 }

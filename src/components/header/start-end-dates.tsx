@@ -8,10 +8,10 @@ interface StartEndDatesProps {
 const StartEndDates = ({ title, description }: StartEndDatesProps) => {
     return (
         <div className="flex items-center gap-4">
-            <Calendar className="text-gray-400" />
+            <Calendar className="text-gray-400 w-5 h-5" />
             <div>
-                <p>{title}</p>
-                <p className="font-bold text-gray-600">{description}</p>
+                <p className="text-xs sm:text-sm">{title}</p>
+                <p className="font-bold text-gray-600 text-sm">{description}</p>
             </div>
         </div>
     );
