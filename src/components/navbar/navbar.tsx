@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BellIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Header from "./header/header";
+import SearchBar from "./search-bar/search-bar";
 import { navLinks } from "@/data/navlinks";
 
 export default function Navbar() {
@@ -82,9 +82,7 @@ export default function Navbar() {
 
             )}
 
-
-            {/* Rest of Header */}
-            <Header />
+            <SearchBar />
         </div>
     );
 }

@@ -5,17 +5,21 @@ export const categories = [
     {
         name: 'Property',
         icon: <Home className="w-5 h-5 text-gray-500" />,
+        link:'/'
     },
     {
         name: 'Vehicles',
         icon: <CarFront className="w-5 h-5 text-gray-500" />,
+        link:'/'
     },
     {
         name: 'Rooms',
         icon: <BedSingle className="w-5 h-5 text-gray-500" />,
+        link:'/'
     },
     {
         name: 'Appartments',
         icon: <BuildingOffice2Icon className="w-5 h-5 text-gray-500" />,
+        link:'/'
     },
 ];
