@@ -19,7 +19,10 @@ export function PropertyCard({
     reviewCount,
 }: PropertyCardProps) {
     return (
-        <Card className="w-[280px] min-[490px]:w-[230px] min-[610px]:w-[280px] min-[767px]:w-[240px] min-[800px]:w-[250px] min-[950px]:w-[300px] border-0 bg-white shadow-sm hover:shadow-md transition-shadow duration-200">
+        <Card className="w-[280px] min-[490px]:w-[230px] min-[610px]:w-[280px]\
+         min-[767px]:w-[240px] min-[800px]:w-[250px] min-[950px]:w-[300px]
+          min-[1020px]:w-[240px] min-[1150px]:w-[270px] border-0 bg-white 
+          shadow-sm hover:shadow-md transition-shadow duration-200">
             <CardHeader className="p-0 relative">
                 {/* Guest Favorite Badge and Heart Icon */}
                 <div className="absolute top-4 left-4 right-4 flex justify-between items-center z-10">
