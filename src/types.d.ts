@@ -13,16 +13,17 @@ interface PropertyCardProps {
     rating: number;
     reviewCount: number;
 }
-interface CarCardProps {
-  id: string
-  image: string
-  title: string
-  rating: number
-  reviewCount: number
-  category: string
-  fuelCapacity: string
-  transmission: string
-  capacity: string
-  price: number
-  isGuestFavorite?: boolean
+
+interface VehicleCardProps {
+  id: string;
+  image: string;
+  title: string;
+  rating: number;
+  reviewCount: number;
+  category: string;
+  fuelCapacity: string;
+  transmission: string;
+  capacity: string;
+  price: number;
+  isGuestFavorite?: boolean;
 }

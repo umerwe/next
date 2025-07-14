@@ -40,17 +40,6 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile Toggler */}
-                    <button
-                        onClick={() => setMobileOpen(!mobileOpen)}
-                        className="md:hidden text-white focus:outline-none"
-                    >
-                        {mobileOpen ? (
-                            <XMarkIcon className="w-6 h-6" />
-                        ) : (
-                            <Bars3Icon className="w-6 h-6" />
-                        )}
-                    </button>
-
                     <div className="flex items-center bg-white rounded-full pl-3 pr-2 py-1 space-x-2 w-fit">
                         <BellIcon className="h-5 w-5 text-green-500" />
                         <Image
@@ -61,6 +50,16 @@ export default function Navbar() {
                             height={28}
                         />
                     </div>
+                    <button
+                        onClick={() => setMobileOpen(!mobileOpen)}
+                        className="md:hidden text-white focus:outline-none"
+                    >
+                        {mobileOpen ? (
+                            <XMarkIcon className="w-6 h-6" />
+                        ) : (
+                            <Bars3Icon className="w-6 h-6" />
+                        )}
+                    </button>
                 </div>
             </nav>
 
@@ -81,7 +80,6 @@ export default function Navbar() {
                 </div>
 
             )}
-
             <SearchBar />
         </div>
     );
