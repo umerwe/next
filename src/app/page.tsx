@@ -1,11 +1,9 @@
-import PropertyList from "@/components/categories/property-card";
-import VehicleList  from "@/components/categories/vehicle-card";
+import PropertyCard from "@/components/categories/property-card";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="mb-40">
-      <PropertyList />
-      <VehicleList />
+      <PropertyCard />
     </div>
   );
 }

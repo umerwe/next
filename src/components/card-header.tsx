@@ -3,7 +3,7 @@ import { CardHeader } from "@/components/ui/card";
 import { Heart } from 'lucide-react';
 
 interface CardTopProps {
-    property: PropertyCardProps | VehicleCardProps;
+    property: PropertyCardProps | VehicleCardProps | RoomCardProps | AppartmentsCardProps;
 }
 
 const CardTop = ({ property }: CardTopProps) => {

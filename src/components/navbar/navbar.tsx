@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BellIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import SearchBar from "./search-bar/search-bar";
 import { navLinks } from "@/data/navlinks";
+import Brand from "./brand";
 
 export default function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,15 +15,7 @@ export default function Navbar() {
         <div className="bg-header">
             <nav className="w-full px-7 md:px-11 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <div className="flex items-center space-x-2">
-                    <Image
-                        src="/ajar-logo.png"
-                        alt="Logo"
-                        width={100}
-                        height={40}
-                        priority
-                    />
-                </div>
+                <Brand />
 
                 {/* Right side: desktop and mobile */}
                 <div className="flex items-center space-x-4">

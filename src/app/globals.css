@@ -162,22 +162,3 @@
   }
 
 }
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 2px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--scrollbar-track);
-  /* ✅ OKLCH used directly */
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb);
-  /* ✅ Use OKLCH directly */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-thumb-hover);
-}

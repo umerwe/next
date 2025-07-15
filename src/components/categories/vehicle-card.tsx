@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Fuel, Settings, Users } from "lucide-react";
-import { carData } from "@/data/car-data";
+import { vehiclesData } from "@/data/vehicles-data";
 import CardHeader from "../card-header";
 import CardFooter from "../card-footer";
 
-export default function VehicleList() {
+export default function VehicleCard() {
   return (
     <div className="grid grid-cols-1 place-items-center min-[490px]:grid-cols-2 md:place-items-start md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6 p-6">
-      {carData.map((property: VehicleCardProps) => (
+      {vehiclesData.map((property: VehicleCardProps) => (
         <Card
           key={property.id}
           className="w-[280px] min-[490px]:w-[230px] min-[610px]:w-[280px]

@@ -10,16 +10,16 @@ export const categories = [
     {
         name: 'Vehicles',
         icon: <CarFront className="w-5 h-5 text-gray-500" />,
-        link:'/'
+        link:'/vehicles'
     },
     {
         name: 'Rooms',
         icon: <BedSingle className="w-5 h-5 text-gray-500" />,
-        link:'/'
+        link:'/rooms'
     },
     {
         name: 'Appartments',
         icon: <BuildingOffice2Icon className="w-5 h-5 text-gray-500" />,
-        link:'/'
+        link:'/appartments'
     },
 ];

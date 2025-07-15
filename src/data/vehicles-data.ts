@@ -1,4 +1,4 @@
-export const carData = [
+export const vehiclesData = [
   {
     id: "1",
     image: "/car-img-1.webp",

@@ -1,13 +1,13 @@
-import { Card } from "@/components/ui/card";
-import { propertiesData } from "@/data/properties-data";
-import CardHeader from "../card-header";
-import CardFooter from "../card-footer";
-import CardBody from "../card-body";
+import { roomsData} from "@/data/rooms-data"
+import { Card } from "../ui/card"
+import CardHeader from "../card-header"
+import CardBottom from "../card-footer"
+import CardBody from "../card-body"
 
-export default function PropertyCard() {
+const RoomCard = () => {
   return (
     <div className="grid grid-cols-1 place-items-center min-[490px]:grid-cols-2 md:place-items-start md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6 p-6">
-      {propertiesData.map((property: PropertyCardProps, index) => (
+      {roomsData.map((property: RoomCardProps, index) => (
         <Card
           key={index}
           className="w-[280px] min-[490px]:w-[230px] min-[610px]:w-[280px]
@@ -20,15 +20,17 @@ export default function PropertyCard() {
             property={property}
           />
 
-          <CardBody
-            property={property}
+          <CardBody 
+          property={property}
           />
 
-          <CardFooter
+          <CardBottom
             property={property}
           />
         </Card>
       ))}
     </div>
-  );
+  )
 }
+
+export default RoomCard
