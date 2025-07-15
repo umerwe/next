@@ -1,11 +1,14 @@
 import { CardFooter } from './ui/card'
 import { Button } from './ui/button'
+import Link from 'next/link';
+import { useLocale } from 'next-intl';
 
 interface CardBottomProps {
   property: PropertyCardProps | VehicleCardProps | RoomCardProps | AppartmentsCardProps;
 }
 
 const CardBottom = ({ property }: CardBottomProps) => {
+  const locale = useLocale();
   return (
     <CardFooter className="px-3 pb-6 pt-0 flex justify-between items-center -mt-1.5">
       {/* Price */}
@@ -15,6 +18,7 @@ const CardBottom = ({ property }: CardBottomProps) => {
       </div>
 
       {/* View Details Button */}
+      <Link locale={locale} href={`properties/${property.title}`}>
       <Button
         variant="outline"
         className="border-2 text-header rounded-full hover:bg-cyan-50 px-4 
@@ -23,6 +27,7 @@ const CardBottom = ({ property }: CardBottomProps) => {
       >
         View Details
       </Button>
+      </Link>
     </CardFooter>
   )
 }

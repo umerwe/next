@@ -1,4 +1,4 @@
-import RoomCard from '@/components/categories/room-card'
+import RoomCard from '@/components/cards/room-card'
 import { Metadata } from 'next';
 import React from 'react'
 

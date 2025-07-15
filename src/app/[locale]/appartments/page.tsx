@@ -1,4 +1,4 @@
-import AppartmentCard from "@/components/categories/appartment-card"
+import AppartmentCard from "@/components/cards/appartment-card"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

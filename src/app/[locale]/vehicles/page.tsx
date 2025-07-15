@@ -1,4 +1,4 @@
-import VehicleCard from '@/components/categories/vehicle-card'
+import VehicleCard from '@/components/cards/vehicle-card'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

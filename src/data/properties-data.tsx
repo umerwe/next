@@ -10,7 +10,7 @@ export const propertiesData = [
       "/property-4.jfif",
       "/property-6.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment1",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -22,6 +22,39 @@ export const propertiesData = [
     rating: 4.1,
     reviewCount: 490,
     isGuestFavorite: true,
+
+    // NEW FIELDS
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
   {
     images: [
@@ -34,7 +67,7 @@ export const propertiesData = [
       "/property-6.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment2",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -46,7 +79,39 @@ export const propertiesData = [
     rating: 4.4,
     reviewCount: 340,
     isGuestFavorite: false,
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
+
   {
     images: [
       "/property-3.webp",
@@ -58,7 +123,7 @@ export const propertiesData = [
       "/property-8.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment3",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -70,7 +135,39 @@ export const propertiesData = [
     rating: 4.2,
     reviewCount: 200,
     isGuestFavorite: true,
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
+
   {
     images: [
       "/property-4.jfif",
@@ -82,7 +179,7 @@ export const propertiesData = [
       "/property-5.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment4",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -94,7 +191,39 @@ export const propertiesData = [
     rating: 4.9,
     reviewCount: 300,
     isGuestFavorite: false,
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
+
   {
     images: [
       "/property-5.jfif",
@@ -106,7 +235,7 @@ export const propertiesData = [
       "/property-6.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment5",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -118,7 +247,39 @@ export const propertiesData = [
     rating: 3.9,
     reviewCount: 300,
     isGuestFavorite: false,
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
+
   {
     images: [
       "/property-6.jfif",
@@ -130,7 +291,7 @@ export const propertiesData = [
       "/property-5.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment6",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -142,7 +303,39 @@ export const propertiesData = [
     rating: 4.3,
     reviewCount: 300,
     isGuestFavorite: true,
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
+
   {
     images: [
       "/property-7.jfif",
@@ -154,7 +347,7 @@ export const propertiesData = [
       "/property-6.jfif",
       "/property-5.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment7",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -166,7 +359,39 @@ export const propertiesData = [
     rating: 4.9,
     reviewCount: 500,
     isGuestFavorite: true,
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
+
   {
     images: [
       "/property-8.jfif",
@@ -178,7 +403,7 @@ export const propertiesData = [
       "/property-6.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment",
+    title: "Apartment8",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -190,5 +415,36 @@ export const propertiesData = [
     rating: 4.2,
     reviewCount: 480,
     isGuestFavorite: false,
+    host: {
+      name: "John Doe",
+      rating: 4.5,
+      totalReviews: 300
+    },
+    highlights: {
+      cleanliness: 8.0,
+      location: 8.8,
+      amenities: 7.5,
+      service: 8.2
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast available",
+      "Housekeeping",
+      "Bar"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "10 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" }
+    ],
+    guestImpressions: [
+      "Great location",
+      "Spacious rooms",
+      "Friendly staff",
+      "Clean property",
+      "Good breakfast"
+    ]
   },
 ];

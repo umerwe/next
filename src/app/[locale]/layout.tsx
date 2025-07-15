@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/providers/provider";
-import Navbar from "@/components/navbar/navbar";
-import Categories from "@/components/categories";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import MainLayout from "@/components/main-layout";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,7 +26,6 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
@@ -40,8 +38,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className={`${poppins.variable} font-sans`}>
         <Providers locale={locale} messages={messages}>
-          <Navbar />
-          <Categories />
+          <MainLayout />
           <main className="flex-1">{children}</main>
         </Providers>
       </body>

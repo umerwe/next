@@ -1,4 +1,4 @@
-import PropertyCard from "@/components/categories/property-card";
+import PropertyCard from "@/components/cards/property-card";
 
 export default function HomePage() {
   return (
