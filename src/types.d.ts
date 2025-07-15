@@ -1,5 +1,5 @@
 interface PropertyCardProps {
-    image: string;
+    images: string[];
     title: string;
     location: string;
     isGuestFavorite?: boolean;
@@ -16,7 +16,7 @@ interface PropertyCardProps {
 
 interface VehicleCardProps {
   id: string;
-  image: string;
+  images: string[];
   title: string;
   rating: number;
   reviewCount: number;
@@ -29,7 +29,7 @@ interface VehicleCardProps {
 }
 
 interface RoomCardProps {
-  image: string
+  images: string[]
   title: string
   location: string
   freeCancellation: boolean
@@ -45,7 +45,7 @@ interface RoomCardProps {
 }
 
 interface AppartmentsCardProps {
-    image: string;
+    images: string[];
     title: string;
     location: string;
     isGuestFavorite?: boolean;

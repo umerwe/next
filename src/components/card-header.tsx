@@ -9,22 +9,21 @@ import React, { useState, useEffect } from "react";
 
 interface CardTopProps {
   property:
-    | PropertyCardProps
-    | VehicleCardProps
-    | RoomCardProps
-    | AppartmentsCardProps;
+  | PropertyCardProps
+  | VehicleCardProps
+  | RoomCardProps
+  | AppartmentsCardProps;
 }
 
 const CardTop = ({ property }: CardTopProps) => {
-  const images =
-    ((property as any).images?.slice(0, 5)) ||
-    [(property as any).image] ||
-    ["/placeholder.svg"];
+  // Ensure we handle both "images" array and "image" string
+  const images: string[] =
+    "images" in property
+      ? property.images?.slice(0, 5) : ["/placeholder.svg"]
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
-      // draggable: true, // not required, default true
     },
     [Autoplay({ delay: 3000, stopOnMouseEnter: true })]
   );
@@ -63,9 +62,9 @@ const CardTop = ({ property }: CardTopProps) => {
       </div>
 
       {/* Carousel */}
-      <div className="overflow-hidden rounded-t-lg z-1" ref={emblaRef}>
+      <div className="overflow-hidden rounded-t-lg" ref={emblaRef}>
         <div className="flex">
-          {images.map((imgUrl: string, index: number) => (
+          {images.map((imgUrl, index) => (
             <div
               key={index}
               className="relative flex-[0_0_100%] h-64"
@@ -84,15 +83,14 @@ const CardTop = ({ property }: CardTopProps) => {
 
       {/* Dots */}
       <div className="flex justify-center mt-3 space-x-1.5 z-10">
-        {images.map((_:any, index:number) => (
+        {images.map((_, index) => (
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
-            className={`h-1.5 w-1.5 -mt-10 rounded-full transition-all duration-300 ${
-              index === selectedIndex
+            className={`h-1.5 w-1.5 -mt-10 rounded-full transition-all duration-300 ${index === selectedIndex
                 ? "bg-white w-2.5"
                 : "bg-gray-300"
-            }`}
+              }`}
           />
         ))}
       </div>
