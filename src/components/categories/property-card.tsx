@@ -27,6 +27,7 @@ export default function PropertyCard() {
           <CardFooter
             property={property}
           />
+          
         </Card>
       ))}
     </div>

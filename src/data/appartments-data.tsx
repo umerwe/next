@@ -1,6 +1,13 @@
 export const appartmentsData = [
   {
-    image: "/appartments-img1.webp",
+    images: [
+      "/appartments-img1.webp",
+      "/appartments-img5.webp",
+      "/appartments-img2.webp",
+      "/appartments-img7.jpg",
+      "/appartments-img3.webp",
+      "/appartments-img6.webp"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,
@@ -15,7 +22,13 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/appartments-img2.webp",
+    images: [
+      "/appartments-img2.webp",
+      "/appartments-img4.webp",
+      "/appartments-img6.webp",
+      "/appartments-img1.webp",
+      "/appartments-img8.jpg"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,
@@ -30,7 +43,13 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
-    image: "/appartments-img3.webp",
+    images: [
+      "/appartments-img3.webp",
+      "/appartments-img7.jpg",
+      "/appartments-img1.webp",
+      "/appartments-img5.webp",
+      "/appartments-img8.jpg"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,
@@ -45,7 +64,13 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/appartments-img4.webp",
+    images: [
+      "/appartments-img4.webp",
+      "/appartments-img6.webp",
+      "/appartments-img2.webp",
+      "/appartments-img5.webp",
+      "/appartments-img3.webp"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,
@@ -60,7 +85,13 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
-    image: "/appartments-img5.webp",
+    images: [
+      "/appartments-img5.webp",
+      "/appartments-img1.webp",
+      "/appartments-img7.jpg",
+      "/appartments-img3.webp",
+      "/appartments-img8.jpg"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,
@@ -75,7 +106,13 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
-    image: "/appartments-img6.webp",
+    images: [
+      "/appartments-img6.webp",
+      "/appartments-img4.webp",
+      "/appartments-img8.jpg",
+      "/appartments-img1.webp",
+      "/appartments-img5.webp"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,
@@ -90,7 +127,13 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/appartments-img7.jpg",
+    images: [
+      "/appartments-img7.jpg",
+      "/appartments-img2.webp",
+      "/appartments-img4.webp",
+      "/appartments-img6.webp",
+      "/appartments-img3.webp"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,
@@ -105,7 +148,13 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/appartments-img8.jpg",
+    images: [
+      "/appartments-img8.jpg",
+      "/appartments-img3.webp",
+      "/appartments-img7.jpg",
+      "/appartments-img5.webp",
+      "/appartments-img1.webp"
+    ],
     title: "Apartment",
     location: "Geneva, Switzerland",
     freeCancellation: true,

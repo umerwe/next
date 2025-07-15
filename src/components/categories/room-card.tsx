@@ -6,7 +6,7 @@ import CardBody from "../card-body"
 
 const RoomCard = () => {
   return (
-    <div className="grid grid-cols-1 place-items-center min-[490px]:grid-cols-2 md:place-items-start md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6 p-6">
+    <div className="grid grid-cols-1 place-items-center min-[490px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6 p-6">
       {roomsData.map((property: RoomCardProps, index) => (
         <Card
           key={index}

@@ -1,16 +1,27 @@
-import React from 'react'
-import { ThemeProvider } from './theme-provider'
-import Navbar from '../navbar/navbar'
-import Categories from '../categories'
+"use client";
 
-const Providers = ({ children }: { children: React.ReactNode }) => {
-    return (
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Navbar />
-            <Categories />
-            <main className="flex-1">{children}</main>
-        </ThemeProvider>
-    )
-}
+import { NextIntlClientProvider } from "next-intl";
+import React from "react";
+import { ThemeProvider } from "./theme-provider";
+import { Provider } from "react-redux";
+import { store } from "@/store/store";
 
-export default Providers
+type ProvidersProps = {
+  children: React.ReactNode;
+  messages: Record<string, any>;
+  locale: string;
+};
+
+const Providers = ({ children, messages, locale }: ProvidersProps) => {
+  return (
+    <Provider store={store}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </ThemeProvider>
+    </Provider>
+  );
+};
+
+export default Providers;

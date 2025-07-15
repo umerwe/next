@@ -1,6 +1,12 @@
 export const roomsData = [
   {
-    image: "/room-img1.webp",
+    images: [
+      "/room-img1.webp",
+      "/room-img4.webp",
+      "/room-img5.jpg",
+      "/room-img2.webp",
+      "/room-img8.jpg"
+    ],
     title: "Standard Room",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -15,7 +21,13 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/room-img2.webp",
+    images: [
+      "/room-img2.webp",
+      "/room-img6.jpg",
+      "/room-img1.webp",
+      "/room-img3.webp",
+      "/room-img8.jpg"
+    ],
     title: "Standard Room",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -30,7 +42,13 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/room-img3.webp",
+    images: [
+      "/room-img3.webp",
+      "/room-img5.jpg",
+      "/room-img7.jpg",
+      "/room-img1.webp",
+      "/room-img2.webp"
+    ],
     title: "Standard Room",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -45,7 +63,13 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/room-img4.webp",
+    images: [
+      "/room-img4.webp",
+      "/room-img8.jpg",
+      "/room-img2.webp",
+      "/room-img3.webp",
+      "/room-img6.jpg"
+    ],
     title: "Standard Room",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -60,7 +84,13 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/room-img5.jpg",
+    images: [
+      "/room-img5.jpg",
+      "/room-img1.webp",
+      "/room-img6.jpg",
+      "/room-img3.webp",
+      "/room-img8.jpg"
+    ],
     title: "Deluxe Room",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -75,7 +105,13 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/room-img6.jpg",
+    images: [
+      "/room-img6.jpg",
+      "/room-img2.webp",
+      "/room-img4.webp",
+      "/room-img5.jpg",
+      "/room-img8.jpg"
+    ],
     title: "Executive Suite",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -90,7 +126,13 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-    image: "/room-img7.jpg",
+    images: [
+      "/room-img7.jpg",
+      "/room-img3.webp",
+      "/room-img8.jpg",
+      "/room-img1.webp",
+      "/room-img6.jpg"
+    ],
     title: "Standard Room",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -105,7 +147,13 @@ export const roomsData = [
     isGuestFavorite: false,
   },
   {
-    image: "/room-img8.jpg",
+    images: [
+      "/room-img8.jpg",
+      "/room-img2.webp",
+      "/room-img4.webp",
+      "/room-img5.jpg",
+      "/room-img7.jpg"
+    ],
     title: "Premium Room",
     location: "Courtyard Tampere City",
     freeCancellation: true,
@@ -119,19 +167,4 @@ export const roomsData = [
     reviewCount: 510,
     isGuestFavorite: true,
   },
-]
-
-// // Helper function to get guest favorite properties
-// export const getGuestFavoriteProperties = (): PropertyData[] => {
-//   return propertyData.filter((property) => property.isGuestFavorite)
-// }
-
-// // Helper function to get properties by price range
-// export const getPropertiesByPriceRange = (minPrice: number, maxPrice: number): PropertyData[] => {
-//   return propertyData.filter((property) => property.price >= minPrice && property.price <= maxPrice)
-// }
-
-// // Helper function to get properties by guest capacity
-// export const getPropertiesByGuestCapacity = (guestCount: number): PropertyData[] => {
-//   return propertyData.filter((property) => property.guests >= guestCount)
-// }
+];

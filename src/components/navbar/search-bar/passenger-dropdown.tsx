@@ -10,7 +10,7 @@ export default function PassengerDropdown() {
           <p className="text-xs sm:text-sm text-gray-500">Passengers</p>
           <p className="font-bold text-xs lg:text-sm text-gray-900">4 adults</p>
         </div>
-        <div className="flex-shrink-0 ml-5">
+        <div className="flex-shrink-0 ml:3 xl:ml-5">
           <ChevronDown className="text-gray-400 w-5 h-5" strokeWidth={3} />
         </div>
       </div>

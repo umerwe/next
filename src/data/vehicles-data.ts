@@ -1,7 +1,13 @@
 export const vehiclesData = [
   {
     id: "1",
-    image: "/car-img-1.webp",
+    images: [
+      "/car-img-1.webp",
+      "/car-img-3.webp",
+      "/car-img-5.webp",
+      "/car-img-7.webp",
+      "/car-img-2.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.9,
     reviewCount: 500,
@@ -14,7 +20,13 @@ export const vehiclesData = [
   },
   {
     id: "2",
-    image: "/car-img-2.webp",
+    images: [
+      "/car-img-2.webp",
+      "/car-img-4.webp",
+      "/car-img-6.webp",
+      "/car-img-8.webp",
+      "/car-img-1.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.9,
     reviewCount: 500,
@@ -27,7 +39,13 @@ export const vehiclesData = [
   },
   {
     id: "3",
-    image: "/car-img-3.webp",
+    images: [
+      "/car-img-3.webp",
+      "/car-img-5.webp",
+      "/car-img-7.webp",
+      "/car-img-1.webp",
+      "/car-img-8.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.9,
     reviewCount: 500,
@@ -40,7 +58,13 @@ export const vehiclesData = [
   },
   {
     id: "4",
-    image: "/car-img-4.webp",
+    images: [
+      "/car-img-4.webp",
+      "/car-img-2.webp",
+      "/car-img-6.webp",
+      "/car-img-8.webp",
+      "/car-img-3.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.9,
     reviewCount: 500,
@@ -53,7 +77,13 @@ export const vehiclesData = [
   },
   {
     id: "5",
-    image: "/car-img-5.webp",
+    images: [
+      "/car-img-5.webp",
+      "/car-img-3.webp",
+      "/car-img-1.webp",
+      "/car-img-7.webp",
+      "/car-img-8.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.8,
     reviewCount: 420,
@@ -66,7 +96,13 @@ export const vehiclesData = [
   },
   {
     id: "6",
-    image: "/car-img-6.webp",
+    images: [
+      "/car-img-6.webp",
+      "/car-img-2.webp",
+      "/car-img-8.webp",
+      "/car-img-4.webp",
+      "/car-img-7.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.7,
     reviewCount: 380,
@@ -79,7 +115,13 @@ export const vehiclesData = [
   },
   {
     id: "7",
-    image: "/car-img-7.webp",
+    images: [
+      "/car-img-7.webp",
+      "/car-img-5.webp",
+      "/car-img-1.webp",
+      "/car-img-3.webp",
+      "/car-img-8.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.9,
     reviewCount: 610,
@@ -92,7 +134,13 @@ export const vehiclesData = [
   },
   {
     id: "8",
-    image: "/car-img-8.webp",
+    images: [
+      "/car-img-8.webp",
+      "/car-img-4.webp",
+      "/car-img-2.webp",
+      "/car-img-6.webp",
+      "/car-img-1.webp"
+    ],
     title: "Hyundai ...",
     rating: 4.6,
     reviewCount: 290,
