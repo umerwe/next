@@ -1,5 +1,6 @@
 export const propertiesData = [
   {
+    id: "1",
     images: [
       "/property-1.webp",
       "/property-3.webp",
@@ -10,53 +11,87 @@ export const propertiesData = [
       "/property-4.jfif",
       "/property-6.jfif"
     ],
-    title: "PearlContinenttalHotelLahore",
-    location: "Shahrah-e-Quiad-Azam, G.O.R. I, Lahore, Punjab 54000, Pakistan",
+    title: "Grand Horizon Hotel",
+    location: "Mall Road, Lahore, Punjab 54000, Pakistan",
     freeCancellation: true,
-    noPrepayment: true,
-    area: "2000sqft",
+    noPrepayment: false,
+    area: "2500sqft",
     beds: 4,
-    baths: 5,
-    guests: 4,
-    price: 99,
-    rating: 4.1,
-    reviewCount: 490,
+    baths: 3,
+    guests: 5,
+    price: 130,
+    rating: 4.5,
+    reviewCount: 620,
     isGuestFavorite: true,
-
-    // NEW FIELDS
     host: {
-      name: "John Doe",
-      rating: 4.5,
-      totalReviews: 300
+      name: "Ayesha Malik",
+      rating: 4.9,
+      totalReviews: 1800
     },
     highlights: {
-      cleanliness: 8.0,
-      location: 8.8,
-      amenities: 7.5,
-      service: 8.2
+      cleanliness: 8.4,
+      location: 8.9,
+      amenities: 8.0,
+      service: 8.5
     },
     features: [
       "Free WiFi",
       "Air conditioning",
       "Parking available",
-      "Breakfast available",
+      "Breakfast included",
       "Housekeeping",
-      "Bar"
+      "Spa",
+      "Gym"
     ],
     nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
-      { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
+      { place: "Lahore Fort", walkTime: "6 min walk" },
+      { place: "Badshahi Mosque", walkTime: "10 min walk" },
+      { place: "Shalimar Gardens", walkTime: "12 min drive" },
+      { place: "Anarkali Bazaar", walkTime: "8 min walk" }
     ],
     guestImpressions: [
-      "Great location",
-      "Spacious rooms",
-      "Friendly staff",
-      "Clean property",
-      "Good breakfast"
+      "Luxurious rooms",
+      "Prime location",
+      "Exceptional service",
+      "Very clean",
+      "Great breakfast"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
     ]
   },
   {
+    id: "2",
     images: [
       "/property-2.webp",
       "/property-4.jfif",
@@ -67,52 +102,87 @@ export const propertiesData = [
       "/property-6.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment2",
-    location: "Geneva, Switzerland",
+    title: "Lakefront Serenity",
+    location: "Rue du Lac 12, Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
     area: "1800sqft",
     beds: 3,
     baths: 2,
-    guests: 3,
-    price: 120,
-    rating: 4.4,
-    reviewCount: 340,
+    guests: 4,
+    price: 145,
+    rating: 4.7,
+    reviewCount: 410,
     isGuestFavorite: false,
     host: {
-      name: "John Doe",
-      rating: 4.5,
-      totalReviews: 300
+      name: "Sophie Laurent",
+      rating: 4.6,
+      totalReviews: 500
     },
     highlights: {
-      cleanliness: 8.0,
-      location: 8.8,
-      amenities: 7.5,
-      service: 8.2
+      cleanliness: 8.6,
+      location: 9.1,
+      amenities: 8.2,
+      service: 8.4
     },
     features: [
       "Free WiFi",
       "Air conditioning",
       "Parking available",
-      "Breakfast available",
+      "Breakfast included",
       "Housekeeping",
-      "Bar"
+      "Balcony",
+      "Lake view"
     ],
     nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Lake Geneva", walkTime: "2 min walk" },
       { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
+      { place: "Jet d'Eau", walkTime: "8 min walk" },
+      { place: "Patek Philippe Museum", walkTime: "15 min walk" }
     ],
     guestImpressions: [
-      "Great location",
-      "Spacious rooms",
-      "Friendly staff",
-      "Clean property",
-      "Good breakfast"
+      "Breathtaking views",
+      "Spacious apartment",
+      "Friendly host",
+      "Spotless",
+      "Excellent breakfast"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
     ]
   },
-
   {
+    id: "3",
     images: [
       "/property-3.webp",
       "/property-1.webp",
@@ -123,164 +193,266 @@ export const propertiesData = [
       "/property-8.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment3",
-    location: "Geneva, Switzerland",
+    title: "Urban Escape",
+    location: "Rue de Berne 25, Geneva, Switzerland",
+    freeCancellation: false,
+    noPrepayment: true,
+    area: "1600sqft",
+    beds: 2,
+    baths: 1,
+    guests: 3,
+    price: 90,
+    rating: 4.1,
+    reviewCount: 280,
+    isGuestFavorite: true,
+    host: {
+      name: "James Carter",
+      rating: 4.3,
+      totalReviews: 350
+    },
+    highlights: {
+      cleanliness: 7.9,
+      location: 8.6,
+      amenities: 7.4,
+      service: 8.1
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Kitchenette",
+      "Housekeeping",
+      "Coffee machine"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "5 min walk" },
+      { place: "Old Town", walkTime: "7 min walk" },
+      { place: "Jet d'Eau", walkTime: "9 min walk" },
+      { place: "Palais des Nations", walkTime: "10 min drive" }
+    ],
+    guestImpressions: [
+      "Central location",
+      "Comfortable stay",
+      "Helpful staff",
+      "Clean rooms",
+      "Good value"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
+    ]
+  },
+  {
+    id: "4",
+    images: [
+      "/property-4.jfif",
+      "/property-2.webp",
+      "/property-3.webp",
+      "/property-1.webp",
+      "/property-8.jfif",
+      "/property-6.jfif",
+      "/property-5.jfif",
+      "/property-7.jfif"
+    ],
+    title: "Skyline Penthouse",
+    location: "Avenue de France 8, Geneva, Switzerland",
+    freeCancellation: true,
+    noPrepayment: false,
+    area: "2300sqft",
+    beds: 5,
+    baths: 4,
+    guests: 6,
+    price: 175,
+    rating: 4.8,
+    reviewCount: 350,
+    isGuestFavorite: true,
+    host: {
+      name: "Emma Schneider",
+      rating: 4.9,
+      totalReviews: 600
+    },
+    highlights: {
+      cleanliness: 8.8,
+      location: 8.7,
+      amenities: 8.5,
+      service: 8.6
+    },
+    features: [
+      "Free WiFi",
+      "Air conditioning",
+      "Parking available",
+      "Breakfast included",
+      "Housekeeping",
+      "Rooftop terrace",
+      "Gym"
+    ],
+    nearby: [
+      { place: "Lake Geneva", walkTime: "4 min walk" },
+      { place: "Old Town", walkTime: "12 min walk" },
+      { place: "Jet d'Eau", walkTime: "10 min walk" },
+      { place: "UN Headquarters", walkTime: "8 min drive" }
+    ],
+    guestImpressions: [
+      "Stunning penthouse",
+      "Luxury amenities",
+      "Attentive host",
+      "Very clean",
+      "Amazing views"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
+    ]
+  },
+  {
+    id: "5",
+    images: [
+      "/property-5.jfif",
+      "/property-2.webp",
+      "/property-4.jfif",
+      "/property-1.webp",
+      "/property-3.webp",
+      "/property-8.jfif",
+      "/property-6.jfif",
+      "/property-7.jfif"
+    ],
+    title: "Cozy Lakeside Loft",
+    location: "Quai du Mont-Blanc, Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
     area: "1500sqft",
     beds: 2,
     baths: 2,
-    guests: 2,
-    price: 89,
-    rating: 4.2,
-    reviewCount: 200,
-    isGuestFavorite: true,
-    host: {
-      name: "John Doe",
-      rating: 4.5,
-      totalReviews: 300
-    },
-    highlights: {
-      cleanliness: 8.0,
-      location: 8.8,
-      amenities: 7.5,
-      service: 8.2
-    },
-    features: [
-      "Free WiFi",
-      "Air conditioning",
-      "Parking available",
-      "Breakfast available",
-      "Housekeeping",
-      "Bar"
-    ],
-    nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
-      { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
-    ],
-    guestImpressions: [
-      "Great location",
-      "Spacious rooms",
-      "Friendly staff",
-      "Clean property",
-      "Good breakfast"
-    ]
-  },
-
-  {
-    images: [
-      "/property-4.jfif",
-      "/property-2.webp",
-      "/property-3.webp",
-      "/property-1.webp",
-      "/property-8.jfif",
-      "/property-6.jfif",
-      "/property-5.jfif",
-      "/property-7.jfif"
-    ],
-    title: "Apartment4",
-    location: "Geneva, Switzerland",
-    freeCancellation: true,
-    noPrepayment: true,
-    area: "2200sqft",
-    beds: 5,
-    baths: 4,
-    guests: 5,
-    price: 150,
-    rating: 4.9,
-    reviewCount: 300,
-    isGuestFavorite: false,
-    host: {
-      name: "John Doe",
-      rating: 4.5,
-      totalReviews: 300
-    },
-    highlights: {
-      cleanliness: 8.0,
-      location: 8.8,
-      amenities: 7.5,
-      service: 8.2
-    },
-    features: [
-      "Free WiFi",
-      "Air conditioning",
-      "Parking available",
-      "Breakfast available",
-      "Housekeeping",
-      "Bar"
-    ],
-    nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
-      { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
-    ],
-    guestImpressions: [
-      "Great location",
-      "Spacious rooms",
-      "Friendly staff",
-      "Clean property",
-      "Good breakfast"
-    ]
-  },
-
-  {
-    images: [
-      "/property-5.jfif",
-      "/property-2.webp",
-      "/property-4.jfif",
-      "/property-1.webp",
-      "/property-3.webp",
-      "/property-8.jfif",
-      "/property-6.jfif",
-      "/property-7.jfif"
-    ],
-    title: "Apartment5",
-    location: "Geneva, Switzerland",
-    freeCancellation: true,
-    noPrepayment: true,
-    area: "1700sqft",
-    beds: 3,
-    baths: 2,
     guests: 3,
     price: 110,
-    rating: 3.9,
-    reviewCount: 300,
+    rating: 4.2,
+    reviewCount: 320,
     isGuestFavorite: false,
     host: {
-      name: "John Doe",
+      name: "Liam Fischer",
       rating: 4.5,
-      totalReviews: 300
+      totalReviews: 400
     },
     highlights: {
-      cleanliness: 8.0,
+      cleanliness: 8.1,
       location: 8.8,
-      amenities: 7.5,
+      amenities: 7.6,
       service: 8.2
     },
     features: [
       "Free WiFi",
       "Air conditioning",
       "Parking available",
-      "Breakfast available",
+      "Kitchenette",
       "Housekeeping",
-      "Bar"
+      "Balcony"
     ],
     nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
-      { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
+      { place: "Lake Geneva", walkTime: "1 min walk" },
+      { place: "Old Town", walkTime: "9 min walk" },
+      { place: "Jet d'Eau", walkTime: "7 min walk" },
+      { place: "Flower Clock", walkTime: "5 min walk" }
     ],
     guestImpressions: [
       "Great location",
-      "Spacious rooms",
-      "Friendly staff",
+      "Cozy vibe",
+      "Friendly host",
       "Clean property",
-      "Good breakfast"
+      "Nice amenities"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
     ]
   },
-
   {
+    id: "6",
     images: [
       "/property-6.jfif",
       "/property-1.webp",
@@ -291,52 +463,87 @@ export const propertiesData = [
       "/property-5.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment6",
-    location: "Geneva, Switzerland",
-    freeCancellation: true,
-    noPrepayment: true,
-    area: "2000sqft",
+    title: "Heritage Manor",
+    location: "F-7 Markaz, Islamabad, Pakistan",
+    freeCancellation: false,
+    noPrepayment: false,
+    area: "2100sqft",
     beds: 4,
     baths: 3,
-    guests: 4,
-    price: 99,
-    rating: 4.3,
-    reviewCount: 300,
+    guests: 5,
+    price: 125,
+    rating: 4.4,
+    reviewCount: 390,
     isGuestFavorite: true,
     host: {
-      name: "John Doe",
-      rating: 4.5,
-      totalReviews: 300
+      name: "Hassan Ahmed",
+      rating: 4.7,
+      totalReviews: 550
     },
     highlights: {
-      cleanliness: 8.0,
-      location: 8.8,
-      amenities: 7.5,
-      service: 8.2
+      cleanliness: 8.3,
+      location: 8.5,
+      amenities: 7.9,
+      service: 8.3
     },
     features: [
       "Free WiFi",
       "Air conditioning",
       "Parking available",
-      "Breakfast available",
+      "Breakfast included",
       "Housekeeping",
+      "Garden",
       "Bar"
     ],
     nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
-      { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
+      { place: "Faisal Mosque", walkTime: "10 min drive" },
+      { place: "Daman-e-Koh", walkTime: "15 min drive" },
+      { place: "Centaurus Mall", walkTime: "8 min walk" },
+      { place: "Jinnah Super Market", walkTime: "5 min walk" }
     ],
     guestImpressions: [
-      "Great location",
+      "Elegant decor",
       "Spacious rooms",
-      "Friendly staff",
-      "Clean property",
-      "Good breakfast"
+      "Welcoming staff",
+      "Very clean",
+      "Great breakfast"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
     ]
   },
-
   {
+    id: "7",
     images: [
       "/property-7.jfif",
       "/property-3.webp",
@@ -347,52 +554,85 @@ export const propertiesData = [
       "/property-6.jfif",
       "/property-5.jfif"
     ],
-    title: "Apartment7",
-    location: "Geneva, Switzerland",
+    title: "Old Town Charm",
+    location: "Rue des Granges, Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
-    area: "1400sqft",
+    area: "1300sqft",
     beds: 2,
     baths: 1,
     guests: 2,
-    price: 80,
-    rating: 4.9,
-    reviewCount: 500,
-    isGuestFavorite: true,
+    price: 85,
+    rating: 4.0,
+    reviewCount: 460,
+    isGuestFavorite: false,
     host: {
-      name: "John Doe",
-      rating: 4.5,
+      name: "Clara Moreau",
+      rating: 4.4,
       totalReviews: 300
     },
     highlights: {
-      cleanliness: 8.0,
-      location: 8.8,
-      amenities: 7.5,
-      service: 8.2
+      cleanliness: 7.7,
+      location: 9.0,
+      amenities: 7.3,
+      service: 8.0
     },
     features: [
       "Free WiFi",
       "Air conditioning",
-      "Parking available",
-      "Breakfast available",
       "Housekeeping",
-      "Bar"
+      "Coffee machine",
+      "Historic building"
     ],
     nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
-      { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
+      { place: "Old Town", walkTime: "2 min walk" },
+      { place: "Lake Geneva", walkTime: "6 min walk" },
+      { place: "Jet d'Eau", walkTime: "8 min walk" },
+      { place: "St. Pierre Cathedral", walkTime: "3 min walk" }
     ],
     guestImpressions: [
-      "Great location",
-      "Spacious rooms",
-      "Friendly staff",
+      "Charming location",
+      "Cozy rooms",
+      "Friendly host",
       "Clean property",
-      "Good breakfast"
+      "Great value"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
     ]
   },
-
   {
+    id: "8",
     images: [
       "/property-8.jfif",
       "/property-2.webp",
@@ -403,48 +643,83 @@ export const propertiesData = [
       "/property-6.jfif",
       "/property-7.jfif"
     ],
-    title: "Apartment8",
-    location: "Geneva, Switzerland",
+    title: "Executive Suites",
+    location: "Gulberg III, Lahore, Punjab 54000, Pakistan",
     freeCancellation: true,
-    noPrepayment: true,
-    area: "2100sqft",
+    noPrepayment: false,
+    area: "2400sqft",
     beds: 5,
-    baths: 5,
-    guests: 5,
-    price: 160,
-    rating: 4.2,
-    reviewCount: 480,
-    isGuestFavorite: false,
+    baths: 4,
+    guests: 6,
+    price: 155,
+    rating: 4.6,
+    reviewCount: 510,
+    isGuestFavorite: true,
     host: {
-      name: "John Doe",
-      rating: 4.5,
-      totalReviews: 300
+      name: "Zainab Iqbal",
+      rating: 4.8,
+      totalReviews: 700
     },
     highlights: {
-      cleanliness: 8.0,
-      location: 8.8,
-      amenities: 7.5,
-      service: 8.2
+      cleanliness: 8.5,
+      location: 8.7,
+      amenities: 8.3,
+      service: 8.6
     },
     features: [
       "Free WiFi",
       "Air conditioning",
       "Parking available",
-      "Breakfast available",
+      "Breakfast included",
       "Housekeeping",
-      "Bar"
+      "Business center",
+      "Swimming pool"
     ],
     nearby: [
-      { place: "Lake Geneva", walkTime: "5 min walk" },
-      { place: "Old Town", walkTime: "10 min walk" },
-      { place: "Jet d'Eau", walkTime: "8 min walk" }
+      { place: "Liberty Market", walkTime: "5 min walk" },
+      { place: "MM Alam Road", walkTime: "7 min walk" },
+      { place: "Gaddafi Stadium", walkTime: "10 min drive" },
+      { place: "Lahore Zoo", walkTime: "12 min drive" }
     ],
     guestImpressions: [
+      "Modern suites",
       "Great location",
-      "Spacious rooms",
-      "Friendly staff",
-      "Clean property",
-      "Good breakfast"
+      "Professional staff",
+      "Very clean",
+      "Excellent amenities"
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Guest User",
+        date: "April 15, 2025",
+        review:
+          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        image: "/user-img-1.png"
+      },
+      {
+        id: 2,
+        user: "UNNYJIM",
+        date: "April 12, 2025",
+        review: "This is room view from window",
+        image: "/user-img-2.png"
+      }
+    ],
+    roomFeatures: [
+      { label: "Breakfast Included", count: 15 },
+      { label: "Free Cancellation", count: 8 },
+      { label: "2 Beds", count: 6 },
+      { label: "Prepay Online", count: 15 },
+      { label: "Instant Confirmation", count: 15 }
+    ],
+    mostMentioned: [
+      { label: "All reviews", count: 90 },
+      { label: "Positive reviews", count: 85 },
+      { label: "Reviews with photos/video", count: 28 },
+      { label: "Awesome stay", count: 20 },
+      { label: "Friendly staff", count: 19 },
+      { label: "Delicious breakfast", count: 10 },
+      { label: "Negative reviews", count: 5 }
     ]
-  },
+  }
 ];

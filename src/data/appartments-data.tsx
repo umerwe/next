@@ -1,5 +1,6 @@
 export const appartmentsData = [
   {
+     id:"1",
     images: [
       "/appartments-img1.webp",
       "/appartments-img5.webp",
@@ -22,6 +23,7 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
+     id:"2",
     images: [
       "/appartments-img2.webp",
       "/appartments-img4.webp",
@@ -43,6 +45,7 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
+     id:"3",
     images: [
       "/appartments-img3.webp",
       "/appartments-img7.jpg",
@@ -64,6 +67,7 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
+     id:"4",
     images: [
       "/appartments-img4.webp",
       "/appartments-img6.webp",
@@ -85,6 +89,7 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
+     id:"5",
     images: [
       "/appartments-img5.webp",
       "/appartments-img1.webp",
@@ -106,6 +111,7 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
+     id:"6",
     images: [
       "/appartments-img6.webp",
       "/appartments-img4.webp",
@@ -127,6 +133,7 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
+     id:"7",
     images: [
       "/appartments-img7.jpg",
       "/appartments-img2.webp",
@@ -148,6 +155,7 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
+     id:"8",
     images: [
       "/appartments-img8.jpg",
       "/appartments-img3.webp",

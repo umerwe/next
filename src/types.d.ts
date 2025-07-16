@@ -1,18 +1,37 @@
 interface PropertyCardProps {
-    images: string[];
-    title: string;
-    location: string;
-    isGuestFavorite?: boolean;
-    freeCancellation: boolean;
-    noPrepayment: boolean;
-    area: string;
-    beds: number;
-    baths: number;
-    guests: number;
-    price: number;
+  id: string;
+  images: string[];
+  title: string;
+  location: string;
+  isGuestFavorite?: boolean;
+  freeCancellation: boolean;
+  noPrepayment: boolean;
+  area: string;
+  beds: number;
+  baths: number;
+  guests: number;
+  price: number;
+  rating: number;
+  reviewCount: number;
+  host: {
+    name: string;
     rating: number;
-    reviewCount: number;
+    totalReviews: number;
+  };
+  highlights: {
+    cleanliness: number;
+    location: number;
+    amenities: number;
+    service: number;
+  };
+  features: string[];
+  nearby: { place: string; walkTime: string }[];
+  guestImpressions: string[];
+  reviews: { id: number; user: string; date: string; review: string; image: string }[];
+  roomFeatures: { label: string; count: number }[];
+  mostMentioned: { label: string; count: number }[];
 }
+
 
 interface VehicleCardProps {
   id: string;
@@ -29,6 +48,7 @@ interface VehicleCardProps {
 }
 
 interface RoomCardProps {
+  id: string,
   images: string[]
   title: string
   location: string
@@ -45,17 +65,18 @@ interface RoomCardProps {
 }
 
 interface AppartmentsCardProps {
-    images: string[];
-    title: string;
-    location: string;
-    isGuestFavorite?: boolean;
-    freeCancellation: boolean;
-    noPrepayment: boolean;
-    area: string;
-    beds: number;
-    baths: number;
-    guests: number;
-    price: number;
-    rating: number;
-    reviewCount: number;
+  id: string,
+  images: string[];
+  title: string;
+  location: string;
+  isGuestFavorite?: boolean;
+  freeCancellation: boolean;
+  noPrepayment: boolean;
+  area: string;
+  beds: number;
+  baths: number;
+  guests: number;
+  price: number;
+  rating: number;
+  reviewCount: number;
 }

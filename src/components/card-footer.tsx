@@ -18,12 +18,12 @@ const CardBottom = ({ property }: CardBottomProps) => {
       </div>
 
       {/* View Details Button */}
-      <Link locale={locale} href={`properties/${property.title}`}>
+      <Link locale={locale} href={`properties/${property.id}`}>
       <Button
         variant="outline"
         className="border-2 text-header rounded-full hover:bg-cyan-50 px-4 
-              text-xs bg-transparent border-t-[#01c89b] border-r-[#01c89b] border-b-[#059afc]
-           border-l-[#059afc]"
+              text-xs bg-transparent border-t-aqua border-r-aqua border-b-blue
+           border-l-blue'>"
       >
         View Details
       </Button>

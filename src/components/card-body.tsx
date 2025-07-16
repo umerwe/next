@@ -29,7 +29,7 @@ const CardBody = ({ property }: CardBodyProps) => {
       </div>
 
       {/* Location */}
-      <p className="text-sm text-[#00CC99] font-medium mb-2">
+      <p className="text-sm text-[#00CC99] font-medium mb-2 truncate">
         Location: {property.location}
       </p>
 
