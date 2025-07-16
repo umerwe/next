@@ -10,8 +10,8 @@ export const propertiesData = [
       "/property-4.jfif",
       "/property-6.jfif"
     ],
-    title: "Apartment1",
-    location: "Geneva, Switzerland",
+    title: "PearlContinenttalHotelLahore",
+    location: "Shahrah-e-Quiad-Azam, G.O.R. I, Lahore, Punjab 54000, Pakistan",
     freeCancellation: true,
     noPrepayment: true,
     area: "2000sqft",
