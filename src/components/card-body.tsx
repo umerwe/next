@@ -2,6 +2,7 @@ import {
   AirVent,
   Bath,
   BedSingle,
+  Check,
   Star,
   Wifi
 } from "lucide-react";
@@ -17,7 +18,7 @@ const CardBody = ({ property }: CardBodyProps) => {
   const hasArea = "area" in property;
 
   return (
-    <CardContent className="px-3 -mt-5">
+    <CardContent className="px-2 -mt-5">
       {/* Title and Rating */}
       <div className="flex items-center justify-between mb-1">
         <h3 className="font-semibold text-gray-900 text-xl truncate">{property.title}</h3>
@@ -35,14 +36,16 @@ const CardBody = ({ property }: CardBodyProps) => {
 
       {/* Features */}
       <ul className="text-xs text-[#0E8800] mb-2 space-y-1">
-        {property.freeCancellation && (
+        {property.freeCancellation  && (
           <li className="flex items-center gap-1">
-            <span className="font-bold text-black">✔</span> Free cancellation
+            <Check className="w-5 h-5 pt-0.5" />
+            <span >Free cancellation</span>
           </li>
         )}
         {property.noPrepayment && (
           <li className="flex items-center gap-1">
-            <span className="font-bold">✔</span> No prepayment needed – pay at the property
+            <Check className="w-5 h-5 pt-0.5" />
+            <span >No prepayment needed – pay at the property</span>
           </li>
         )}
       </ul>

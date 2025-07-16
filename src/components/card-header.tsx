@@ -16,7 +16,6 @@ interface CardTopProps {
 }
 
 const CardTop = ({ property }: CardTopProps) => {
-  // Ensure we handle both "images" array and "image" string
   const images: string[] =
     "images" in property
       ? property.images?.slice(0, 5) : ["/placeholder.svg"]
@@ -48,7 +47,7 @@ const CardTop = ({ property }: CardTopProps) => {
   return (
     <CardHeader className="p-0 relative">
       {/* Guest Favorite Badge and Heart Icon */}
-      <div className="absolute top-4 left-4 right-4 flex justify-between items-center z-10">
+      <div className="absolute top-3 left-4 right-4 flex justify-between items-center z-10">
         <div>
           {property.isGuestFavorite && (
             <div className="bg-white/90 backdrop-blur-sm px-3 rounded-full pb-1">
@@ -62,7 +61,7 @@ const CardTop = ({ property }: CardTopProps) => {
       </div>
 
       {/* Carousel */}
-      <div className="overflow-hidden rounded-t-lg" ref={emblaRef}>
+      <div className="overflow-hidden rounded-2xl" ref={emblaRef}>
         <div className="flex">
           {images.map((imgUrl, index) => (
             <div
@@ -73,7 +72,7 @@ const CardTop = ({ property }: CardTopProps) => {
                 src={imgUrl}
                 alt={property.title}
                 fill
-                className="object-cover rounded-t-lg"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
