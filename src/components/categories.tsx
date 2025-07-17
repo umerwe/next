@@ -70,7 +70,7 @@ const Categories = () => {
         >
           <div className="flex items-center gap-3">
             <activeCategory.icon className="w-5 h-5 text-aqua" />
-            <span className="text-sm font-semibold text-aqua">{activeCategory.name}</span>
+            <span className="text-sm font-semibold text-header">{activeCategory.name}</span>
           </div>
           <ChevronDownIcon
             className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`}
