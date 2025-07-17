@@ -10,7 +10,7 @@ interface CardBottomProps {
 const CardBottom = ({ property }: CardBottomProps) => {
   const locale = useLocale();
   return (
-    <CardFooter className="px-3 pb-6 pt-0 flex justify-between items-center -mt-1.5">
+    <CardFooter className="px-3 pb-2 pt-0 flex justify-between items-center -mt-1.5">
       {/* Price */}
       <div className="flex flex-col">
         <span className="text-lg font-bold text-gray-900">${property.price}.00/</span>
@@ -18,7 +18,7 @@ const CardBottom = ({ property }: CardBottomProps) => {
       </div>
 
       {/* View Details Button */}
-      <Link locale={locale} href={`properties/${property.id}`}>
+      <Link locale={locale} href={`${property.category}/${property.id}`}>
         <Button
           variant="outline"
           className="px-4 

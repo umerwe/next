@@ -1,6 +1,7 @@
 interface PropertyCardProps {
   id: string;
-  status : string;
+  category: string,
+  status: string;
   images: string[];
   title: string;
   location: string;
@@ -36,6 +37,8 @@ interface PropertyCardProps {
 
 interface VehicleCardProps {
   id: string;
+  status : string,
+  description : string
   images: string[];
   title: string;
   rating: number;
@@ -50,6 +53,8 @@ interface VehicleCardProps {
 
 interface RoomCardProps {
   id: string,
+  status : string,
+  category : string,
   images: string[]
   title: string
   location: string
@@ -68,6 +73,8 @@ interface RoomCardProps {
 interface AppartmentsCardProps {
   id: string,
   images: string[];
+  category:string
+  status : string,
   title: string;
   location: string;
   isGuestFavorite?: boolean;

@@ -16,6 +16,7 @@ export const propertiesData = [
     location: "Mall Road, Lahore, Punjab 54000, Pakistan",
     freeCancellation: true,
     noPrepayment: true,
+    category: "properties",
     area: "2500sqft",
     beds: 4,
     baths: 3,
@@ -107,6 +108,7 @@ export const propertiesData = [
     title: "Lakefront Serenity",
     location: "Rue du Lac 12, Geneva, Switzerland",
     freeCancellation: true,
+    category: "properties",
     noPrepayment: true,
     area: "1800sqft",
     beds: 3,
@@ -186,6 +188,7 @@ export const propertiesData = [
   {
     status: "Completed",
     id: "3",
+    category: "properties",
     images: [
       "/property-3.webp",
       "/property-1.webp",
@@ -274,6 +277,7 @@ export const propertiesData = [
     ]
   },
   {
+    category: "properties",
     id: "4",
     status: "Approved",
     images: [
@@ -366,6 +370,7 @@ export const propertiesData = [
     ]
   },
   {
+    category: "properties",
     id: "5",
     status: "Pending",
     images: [
@@ -457,6 +462,7 @@ export const propertiesData = [
     ]
   },
   {
+    category: "properties",
     id: "6",
     status: "Completed",
     images: [
@@ -549,6 +555,7 @@ export const propertiesData = [
     ]
   },
   {
+    category: "properties",
     id: "7",
     status: "Approved",
     images: [
@@ -639,6 +646,7 @@ export const propertiesData = [
     ]
   },
   {
+    category: "properties",
     id: "8",
     status: "Completed",
     images: [

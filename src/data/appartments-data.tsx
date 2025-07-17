@@ -1,6 +1,6 @@
 export const appartmentsData = [
   {
-     id:"1",
+    id: "1",
     images: [
       "/appartments-img1.webp",
       "/appartments-img5.webp",
@@ -11,6 +11,8 @@ export const appartmentsData = [
     ],
     title: "Apartment",
     location: "Geneva, Switzerland",
+    category: "appartments",
+    status: "Completed",
     freeCancellation: true,
     noPrepayment: true,
     area: "2000sqft)",
@@ -23,7 +25,7 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-     id:"2",
+    id: "2",
     images: [
       "/appartments-img2.webp",
       "/appartments-img4.webp",
@@ -32,6 +34,8 @@ export const appartmentsData = [
       "/appartments-img8.jpg"
     ],
     title: "Apartment",
+    category: "appartments",
+    status: "Pending",
     location: "Geneva, Switzerland",
     freeCancellation: true,
     noPrepayment: true,
@@ -45,7 +49,9 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
-     id:"3",
+    id: "3",
+     category: "appartments",
+    status: "Completed",
     images: [
       "/appartments-img3.webp",
       "/appartments-img7.jpg",
@@ -67,7 +73,9 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-     id:"4",
+    id: "4",
+     category: "appartments",
+    status: "Approved",
     images: [
       "/appartments-img4.webp",
       "/appartments-img6.webp",
@@ -89,7 +97,9 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
-     id:"5",
+    id: "5",
+     category: "appartments",
+    status: "Approved",
     images: [
       "/appartments-img5.webp",
       "/appartments-img1.webp",
@@ -111,7 +121,9 @@ export const appartmentsData = [
     isGuestFavorite: false,
   },
   {
-     id:"6",
+    id: "6",
+     category: "appartments",
+    status: "Pending",
     images: [
       "/appartments-img6.webp",
       "/appartments-img4.webp",
@@ -133,7 +145,9 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-     id:"7",
+    id: "7",
+     category: "appartments",
+    status: "Completed",
     images: [
       "/appartments-img7.jpg",
       "/appartments-img2.webp",
@@ -155,7 +169,9 @@ export const appartmentsData = [
     isGuestFavorite: true,
   },
   {
-     id:"8",
+     category: "appartments",
+    status: "Pending",
+    id: "8",
     images: [
       "/appartments-img8.jpg",
       "/appartments-img3.webp",

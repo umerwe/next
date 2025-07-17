@@ -1,6 +1,8 @@
 export const roomsData = [
   {
-     id:"1",
+    id: "1",
+    category: "rooms",
+    status: "Pending",
     images: [
       "/room-img1.webp",
       "/room-img4.webp",
@@ -22,7 +24,9 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-     id:"2",
+    id: "2",
+    category: "rooms",
+    status: "Completed",
     images: [
       "/room-img2.webp",
       "/room-img6.jpg",
@@ -44,7 +48,9 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-     id:"3",
+    category: "rooms",
+    status: "Pending",
+    id: "3",
     images: [
       "/room-img3.webp",
       "/room-img5.jpg",
@@ -65,8 +71,10 @@ export const roomsData = [
     reviewCount: 500,
     isGuestFavorite: true,
   },
-  { 
-    id:"4",
+  {
+    id: "4",
+    category: "rooms",
+    status: "Approved",
     images: [
       "/room-img4.webp",
       "/room-img8.jpg",
@@ -88,7 +96,9 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-     id:"5",
+    category: "rooms",
+    status: "Approved",
+    id: "5",
     images: [
       "/room-img5.jpg",
       "/room-img1.webp",
@@ -110,7 +120,9 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-     id:"6",
+    id: "6",
+    category: "rooms",
+    status: "Completed",
     images: [
       "/room-img6.jpg",
       "/room-img2.webp",
@@ -132,7 +144,9 @@ export const roomsData = [
     isGuestFavorite: true,
   },
   {
-     id:"7",
+    id: "7",
+    category: "rooms",
+    status: "Approved",
     images: [
       "/room-img7.jpg",
       "/room-img3.webp",
@@ -154,7 +168,9 @@ export const roomsData = [
     isGuestFavorite: false,
   },
   {
-     id:"8",
+    id: "8",
+    category: "rooms",
+    status: "Completed",
     images: [
       "/room-img8.jpg",
       "/room-img2.webp",

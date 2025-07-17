@@ -1,9 +1,10 @@
 "use client"
 import { useState } from "react"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent,DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
 
 interface PhotoGalleryProps {
   images: string[]
@@ -25,6 +26,9 @@ export const PhotoGallery = ({ images, open, onClose }: PhotoGalleryProps) => {
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="w-full max-w-6xl h-[90vh] sm:h-[80vh] md:h-[85vh] p-0 flex flex-col">
+        <VisuallyHidden>
+          <DialogTitle>Photo Gallery</DialogTitle>
+        </VisuallyHidden>
         {/* Header */}
         <div className="flex justify-between items-center px-4 py-3 border-b">
           <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-800">

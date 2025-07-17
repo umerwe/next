@@ -15,10 +15,11 @@ import { PhotoGallery } from "./photo-gallery"
 import { useRouter } from "next/navigation"
 
 const Details = () => {
+    const router = useRouter();
     const { id } = useParams<{ id: string }>()
+
     const [isGalleryOpen, setIsGalleryOpen] = useState(false)
     const [isFavorite, setIsFavorite] = useState(false)
-    const router = useRouter();
 
     const filteredData = propertiesData.filter((item) => item.id === id)
 
@@ -93,13 +94,13 @@ const Details = () => {
                                         className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white cursor-pointer"
                                         onClick={() => setIsGalleryOpen(true)}
                                     >
-                                        <div className="w-8 h-8 mb-2 grid grid-cols-2 gap-0.5">
-                                            <div className="bg-white/80 rounded-sm" />
-                                            <div className="bg-white/80 rounded-sm" />
-                                            <div className="bg-white/80 rounded-sm" />
-                                            <div className="bg-white/80 rounded-sm" />
-                                        </div>
-                                        <span className="text-sm font-medium">See All {property.images.length} Photos</span>
+                                        <Image
+                                        src={'/image-icon.png'}
+                                        width={24}
+                                        height={24}
+                                        alt="image-icon"
+                                        />
+                                        <span className="text-xs font-medium">See All {property.images.length} Photos</span>
                                     </div>
                                 )}
                             </div>
@@ -230,7 +231,7 @@ const Details = () => {
 
             <div className="px-3">
                 {/* Host info */}
-                <div className="mt-8">
+                <div className="-mt-12">
                     <div className="flex items-center mb-4">
                         <h3 className="text-lg font-bold text-gray-800">Hosted by</h3>
                     </div>
@@ -268,8 +269,10 @@ const Details = () => {
                 </div>
             </div>
 
-            {/* Photo Gallery Modal */}
-            <PhotoGallery images={property.images} open={isGalleryOpen} onClose={() => setIsGalleryOpen(false)} />
+            <PhotoGallery
+                images={property.images}
+                open={isGalleryOpen}
+                onClose={() => setIsGalleryOpen(false)} />
         </div>
     )
 }
