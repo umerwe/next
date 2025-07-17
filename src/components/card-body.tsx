@@ -2,12 +2,12 @@ import {
   AirVent,
   Bath,
   BedSingle,
-  Check,
   Star,
   Wifi
 } from "lucide-react";
 import { RectangleGroupIcon } from "@heroicons/react/24/outline";
 import { CardContent } from "./ui/card";
+import Features from "./features";
 
 interface CardBodyProps {
   property: PropertyCardProps | AppartmentsCardProps | RoomCardProps;
@@ -34,21 +34,11 @@ const CardBody = ({ property }: CardBodyProps) => {
         Location: {property.location}
       </p>
 
-      {/* Features */}
-      <ul className="text-xs text-[#0E8800] mb-2 space-y-1">
-        {property.freeCancellation  && (
-          <li className="flex items-center gap-1">
-            <Check className="w-5 h-5 pt-0.5" />
-            <span >Free cancellation</span>
-          </li>
-        )}
-        {property.noPrepayment && (
-          <li className="flex items-center gap-1">
-            <Check className="w-5 h-5 pt-0.5" />
-            <span >No prepayment needed – pay at the property</span>
-          </li>
-        )}
-      </ul>
+      <Features
+        freeCancellation={property.freeCancellation}
+        noPrepayment={property.noPrepayment}
+        layout="list"
+      />
 
       {/* Specifications */}
       <div className="flex justify-between text-xs font-medium text-gray-custom">

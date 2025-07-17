@@ -1,9 +1,13 @@
-import Details from "@/components/pages/details/details";
+import Details from "@/components/pages/details/details"
 
-const PropertyDetails = () => {
-  return (
-    <Details />
-  );
-};
+interface DetailsPageProps {
+  params: Promise<{
+    id: string
+  }>
+}
 
-export default PropertyDetails;
+export default async function DetailsPage({ params }: DetailsPageProps) {
+  const { id } = await params
+
+  return <Details id={id} />
+}
