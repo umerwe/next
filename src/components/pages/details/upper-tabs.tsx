@@ -6,24 +6,27 @@ import React, { useState } from 'react'
 const UpperTabs = ({id} : {id : string}) => {
     const upperTabs = ['Overview', 'About', 'Rooms', 'Accessibility', 'Policies'];
     const [activeTab, setActiveTab] = useState('Overview');
+    
     return (
-        <div className="mb-6 px-3 mt-2 border-b-1">
-            <ul className="flex space-x-8 text-gray-700 text-sm font-semibold border-b-1">
-                {upperTabs.map((tab) => (
-                    <li
-                        key={tab}
-                        onClick={() => setActiveTab(tab)}
-                        className={`cursor-pointer pb-2 ${activeTab === tab
-                            ? 'border-b-2 border-aqua text-aqua'
-                            : 'hover:text-aqua'
-                            }`}
-                    >
-                        <Link href={`/properties/${id}#${tab.toLowerCase()}`}>
-                            {tab}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+        <div className="mb-6 sm:px-3 mt-2 border-b-1">
+            <div className="overflow-x-auto scrollbar-hide">
+                <ul className="flex space-x-4 sm:space-x-6 lg:space-x-8 text-gray-700 text-xs sm:text-sm font-semibold border-b-1 min-w-max">
+                    {upperTabs.map((tab) => (
+                        <li
+                            key={tab}
+                            onClick={() => setActiveTab(tab)}
+                            className={`cursor-pointer pb-2 whitespace-nowrap ${activeTab === tab
+                                ? 'border-b-2 border-aqua text-aqua'
+                                : 'hover:text-aqua'
+                                }`}
+                        >
+                            <Link href={`/properties/${id}#${tab.toLowerCase()}`}>
+                                {tab}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }

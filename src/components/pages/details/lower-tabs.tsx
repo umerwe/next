@@ -8,23 +8,25 @@ const LowerTabs = ({id} : {id:string}) => {
     const [activesTab, setActivesTab] = useState('Rooms');
 
     return (
-        <div className="mt-8 border-b" >
-            <ul className="flex space-x-8 text-gray-700 text-sm font-medium">
-                {lowerTabs.map((tab) => (
-                    <li
-                        key={tab}
-                        onClick={() => setActivesTab(tab)}
-                        className={`cursor-pointer pb-3 ${activesTab === tab
-                            ? 'border-b-2 border-black text-black font-semibold'
-                            : 'hover:text-black'
-                            }`}
-                    >
-                        <Link href={`/properties/${id}#${tab.toLowerCase()}`}>
-                            {tab}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+        <div className="mt-8 border-b">
+            <div className="overflow-x-auto scrollbar-hide">
+                <ul className="flex space-x-4 sm:space-x-6 lg:space-x-8 text-gray-700 text-xs sm:text-sm font-medium min-w-max">
+                    {lowerTabs.map((tab) => (
+                        <li
+                            key={tab}
+                            onClick={() => setActivesTab(tab)}
+                            className={`cursor-pointer pb-3 whitespace-nowrap ${activesTab === tab
+                                ? 'border-b-2 border-black text-black font-semibold'
+                                : 'hover:text-black'
+                                }`}
+                        >
+                            <Link href={`/properties/${id}#${tab.toLowerCase()}`}>
+                                {tab}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div >
     )
 }

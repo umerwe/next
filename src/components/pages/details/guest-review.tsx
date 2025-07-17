@@ -4,9 +4,9 @@ const GuestReview = ({ property }: { property: PropertyCardProps }) => {
     return (
         <div>
             <h2 className="text-xl font-semibold text-gray-800 mb-4">Guest Reviews</h2>
-            <div className='flex justify-between'>
+            <div className='flex flex-col lg:flex-row lg:justify-between gap-6 lg:gap-8'>
                 {/* Overall Rating */}
-                <div className="flex items-center space-x-4 mb-6">
+                <div className="flex items-center space-x-4 mb-2 lg:mb-0">
                     <div className="bg-aqua text-white px-4 py-2 rounded-l-full rounded-b-full">
                         <span className="text-2xl font-bold">{property.rating.toFixed(1)}</span>
                         <span className="text-lg">/10</span>
@@ -18,7 +18,7 @@ const GuestReview = ({ property }: { property: PropertyCardProps }) => {
                 </div>
 
                 {/* Rating Breakdown */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 w-165">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 w-full lg:w-165">
                     <div className="space-y-3">
                         <div className="flex items-center justify-between">
                             <span className="text-sm font-medium text-gray-700">Cleanliness</span>
@@ -72,5 +72,4 @@ const GuestReview = ({ property }: { property: PropertyCardProps }) => {
         </div>
     )
 }
-
 export default GuestReview
