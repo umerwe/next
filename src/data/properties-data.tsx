@@ -1,6 +1,7 @@
 export const propertiesData = [
   {
     id: "1",
+    status: "Pending",
     images: [
       "/property-1.webp",
       "/property-3.webp",
@@ -92,6 +93,7 @@ export const propertiesData = [
   },
   {
     id: "2",
+    status: "Approved",
     images: [
       "/property-2.webp",
       "/property-4.jfif",
@@ -182,6 +184,7 @@ export const propertiesData = [
     ]
   },
   {
+    status: "Completed",
     id: "3",
     images: [
       "/property-3.webp",
@@ -272,6 +275,7 @@ export const propertiesData = [
   },
   {
     id: "4",
+    status: "Approved",
     images: [
       "/property-4.jfif",
       "/property-2.webp",
@@ -363,6 +367,7 @@ export const propertiesData = [
   },
   {
     id: "5",
+    status: "Pending",
     images: [
       "/property-5.jfif",
       "/property-2.webp",
@@ -453,6 +458,7 @@ export const propertiesData = [
   },
   {
     id: "6",
+    status: "Completed",
     images: [
       "/property-6.jfif",
       "/property-1.webp",
@@ -544,6 +550,7 @@ export const propertiesData = [
   },
   {
     id: "7",
+    status: "Approved",
     images: [
       "/property-7.jfif",
       "/property-3.webp",
@@ -633,6 +640,7 @@ export const propertiesData = [
   },
   {
     id: "8",
+    status: "Completed",
     images: [
       "/property-8.jfif",
       "/property-2.webp",

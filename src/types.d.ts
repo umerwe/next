@@ -1,5 +1,6 @@
 interface PropertyCardProps {
   id: string;
+  status : string;
   images: string[];
   title: string;
   location: string;
