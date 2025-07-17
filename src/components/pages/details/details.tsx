@@ -1,4 +1,4 @@
-import {ChevronRight} from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import { propertiesData } from "@/data/properties-data"
 import UpperTabs from "./upper-tabs"
 import LowerTabs from "./lower-tabs"
@@ -13,6 +13,8 @@ import PricingActions from "./pricing-actions"
 import AboutProperty from "./about-property"
 import CoreDetails from "./core-details"
 import Features from "@/components/features"
+import Rating from "./rating"
+import GuestLikedPost from "./guest-liked."
 
 interface DetailsProps {
     id: string
@@ -59,23 +61,13 @@ const Details = ({ id }: DetailsProps) => {
                         layout="inline"
                     />
 
+                    <Rating
+                        property={property}
+                    />
 
-                    {/* Rating */}
-                    <div className="flex flex-row sm:items-center gap-2 sm:gap-2">
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-green-700 text-white px-2 py-1 rounded text-xs">{property.rating.toFixed(1)}</span>
-                            <span className="font-semibold text-gray-700">Excellent</span>
-                        </div>
-                        <span className="text-aqua text-sm flex items-center cursor-pointer">
-                            <p>See all {property.reviewCount} reviews</p>
-                            <ChevronRight className="w-4 h-4 ml-1" />
-                        </span>
-                    </div>
-
-                    {/* Guests liked */}
-                    <p className="text-gray-600 text-sm -mt-1.5">
-                        <b>Guests liked:</b> {property.guestImpressions.slice(0, 2).join(", ")}
-                    </p>
+                    <GuestLikedPost
+                        property={property}
+                    />
 
                     <AboutProperty
                         property={property}
