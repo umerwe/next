@@ -29,7 +29,7 @@ const Features = ({ freeCancellation, noPrepayment, layout = "list" }: FeaturesP
 
 
   return (
-    <span className="flex gap-2">
+    <span className="flex max-[367px]:flex-col sm:flex-row gap-2">
       {features.map((feature, index) => (
         <span key={index} className="flex items-center gap-1 text-[#0E8800]">
           <Check className="h-4 w-4 " />
