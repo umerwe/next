@@ -61,32 +61,32 @@ const CardBody = ({ property }: DataProps) => {
 
         {/* Room Wifi */}
         {isRoom && (
-          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
-            <Wifi className="w-3 h-3" />
+          <div className="flex items-center gap-1 text-xs">
+            <Wifi className="w-3 h-3 sm:w-4 sm:h-4" />
             <span>{property.wifi ? "WIFI" : "NO"}</span>
           </div>
         )}
 
         {/* Beds */}
         {hasBeds && (
-          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
-            <BedSingle className="w-3 h-3" />
+          <div className="flex items-center gap-1 text-xs">
+            <BedSingle className="w-3 h-3 sm:w-4 sm:h-4" />
             <span>{property.beds}</span>
           </div>
         )}
 
         {/* Baths */}
         {hasBaths && (
-          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
-            <Bath className="w-3 h-3" />
+          <div className="flex items-center gap-1 text-xs">
+            <Bath className="w-3 h-3 sm:w-4 sm:h-4" />
             <span>{property.baths}</span>
           </div>
         )}
 
         {/* Guests */}
         {hasGuests && (
-          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
-            <AirVent className="w-3 h-3" />
+          <div className="flex items-center gap-1 text-xs">
+            <AirVent className="w-3 h-3 sm:w-4 sm:h-4" />
             <span>{property.guests}</span>
           </div>
         )}
