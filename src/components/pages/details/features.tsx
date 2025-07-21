@@ -7,11 +7,7 @@ import {
   Wifi,
 } from "lucide-react";
 
-interface FeaturedDataProps {
-  property: PropertyCardProps
-}
-
-const FeaturesData = ({property}: FeaturedDataProps) => {
+const FeaturesData = ({property}: DataProps) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-sm max-w-140">
             {

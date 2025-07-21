@@ -2,7 +2,7 @@ import { CircleChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
-const GuestImpressions = ({ property }: { property: PropertyCardProps }) => {
+const GuestImpressions = ({ property }: DataProps) => {
   return (
     <div className="mb-6">
       <h3 className="text-lg font-semibold text-gray-800 mb-3">Guest Impressions</h3>

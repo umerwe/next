@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import { ChevronRight, MapPin } from 'lucide-react'
 import Image from 'next/image'
 
-const ExploreArea = ({ property }: { property: PropertyCardProps }) => {
+const ExploreArea = ({ property }: DataProps) => {
     return (
         <div className='space-y-3'>
             <h2 className="text-lg md:text-xl font-semibold text-gray-800">Explore the area</h2>

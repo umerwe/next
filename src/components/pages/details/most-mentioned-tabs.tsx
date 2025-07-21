@@ -1,5 +1,5 @@
 
-const MostMentionedTabs = ({property} : {property : PropertyCardProps}) => {
+const MostMentionedTabs = ({property} : DataProps) => {
     return (
         <div className="mb-6" >
             <h3 className="text-lg font-semibold text-gray-800 mb-3">Most Mentioned</h3>

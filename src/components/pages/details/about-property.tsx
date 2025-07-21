@@ -2,7 +2,7 @@ import React from 'react'
 import FeaturesData from './features'
 import { Button } from '@/components/ui/button'
 
-const AboutProperty = ({ property }: { property: PropertyCardProps }) => {
+const AboutProperty = ({ property }: DataProps) => {
     return (
         <div>
             <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">About this property</h2>

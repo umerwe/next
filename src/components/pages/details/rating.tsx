@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react"
 
-const Rating = ({ property }: { property: PropertyCardProps }) => {
+const Rating = ({ property }: DataProps) => {
     return (
         <div className="flex flex-row sm:items-center gap-2 sm:gap-2">
             <div className="flex items-center space-x-2">

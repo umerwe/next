@@ -2,18 +2,18 @@
 import Image from "next/image";
 import { useState } from "react";
 import { PhotoGallery } from "./photo-gallery";
-import { Heart } from "lucide-react";
+import { Heart, Images } from "lucide-react";
 
-interface PropertyCardProps {
+interface ImageProps {
   images: string[];
 }
 
-const ImageGalleryLayout = ({ property }: { property: PropertyCardProps }) => {
+const ImageGalleryLayout = ({ property }: { property: ImageProps }) => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
 
   return (
-    <div className="pb-4">
+    <div className="py-6">
       <div className="flex flex-col md:flex-row gap-2 h-auto">
         {/* Big Left Image */}
         <div className="w-full md:w-[45%] lg:w-[45%] h-[250px] sm:h-[280px] md:h-auto xl:h-[340px] min-h-[250px] relative rounded-lg overflow-hidden">
@@ -83,27 +83,22 @@ const ImageGalleryLayout = ({ property }: { property: PropertyCardProps }) => {
                 {/* Heart icon on 3rd image (top-right) */}
                 {index === 2 && (
                   <button
-                    className="absolute top-2 right-2 p-2 bg-white/80 rounded-full hover:bg-white transition"
+                    className="absolute top-2 right-2 p-1.5 bg-white/80 rounded-full hover:bg-white transition"
                     onClick={() => setIsFavorite(!isFavorite)}
                   >
                     <Heart
-                      className={`w-5 h-5 ${isFavorite ? "fill-red-500 text-red-500" : "text-gray-600"}`}
+                      className={`w-4.5 h-4.5 ${isFavorite ? "fill-red-500 text-red-500" : "text-gray-600"}`}
                     />
                   </button>
                 )}
                 {/* Overlay on last image (bottom-right) */}
                 {index === 5 && (
                   <div
-                    className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white cursor-pointer"
+                    className="absolute inset-0 bg-black/50 flex flex-col gap-2 items-center justify-center text-white cursor-pointer"
                     onClick={() => setIsGalleryOpen(true)}
                   >
-                    <div className="w-8 h-8 mx-auto mb-2 grid grid-cols-2 gap-0.5">
-                      <div className="bg-white/80 rounded-sm"></div>
-                      <div className="bg-white/80 rounded-sm"></div>
-                      <div className="bg-white/80 rounded-sm"></div>
-                      <div className="bg-white/80 rounded-sm"></div>
-                    </div>
-                    <span className="text-sm font-medium">See All {property.images.length} Photos</span>
+                    <Images />
+                    <span className="text-xs font-medium">See All {property.images.length} Photos</span>
                   </div>
                 )}
               </div>

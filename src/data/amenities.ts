@@ -1,3 +1,5 @@
+import type { LucideIcon } from "lucide-react";
+
 import {
   Car,
   Wine,
@@ -37,19 +39,19 @@ import {
 } from "lucide-react"
 
 export interface Amenity {
-  id: string
-  name: string
-  icon: any
-  isFree?: boolean
-  hasAdditionalCharge?: boolean
-  description?: string
+  id: string;
+  name: string;
+  icon: LucideIcon;
+  isFree?: boolean;
+  hasAdditionalCharge?: boolean;
+  description?: string;
 }
 
 export interface AmenityCategory {
-  id: string
-  title: string
-  icon: any
-  amenities: Amenity[]
+  id: string;
+  title: string;
+  icon: LucideIcon;
+  amenities: Amenity[];
 }
 
 export const mostPopularAmenities: Amenity[] = [

@@ -3,10 +3,10 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 
-const UpperTabs = ({id} : {id : string}) => {
+const UpperTabs = ({ id }: { id: string }) => {
     const upperTabs = ['Overview', 'About', 'Rooms', 'Accessibility', 'Policies'];
     const [activeTab, setActiveTab] = useState('Overview');
-    
+
     return (
         <div className="mb-6 sm:px-3 mt-2 border-b-1">
             <div className="overflow-x-auto scrollbar-hide">

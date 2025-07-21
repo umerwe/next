@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GuestReview = ({ property }: { property: PropertyCardProps }) => {
+const GuestReview = ({ property }: DataProps) => {
     return (
         <div>
             <h2 className="text-xl font-semibold text-gray-800 mb-4">Guest Reviews</h2>

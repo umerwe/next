@@ -3,19 +3,26 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import { useRouter } from "next/navigation";
 
-const Header = ({ property }: { property: PropertyCardProps }) => {
+interface HeaderProps {
+    property?: PropertyCardProps | RoomCardProps | AppartmentsCardProps | VehicleCardProps
+}
+
+const Header = ({ property }: HeaderProps) => {
     const router = useRouter();
     return (
-        <div className="flex items-center justify-between py-6 bg-white">
+        <div className="flex items-center justify-between pt-6 bg-white">
             <div className="flex items-center gap-2 sm:gap-4">
-                <Button variant="ghost" className="p-0 bg-gray-200" onClick={() => router.back()}>
+                <Button variant="ghost" className="px-0 py-5.5 bg-gray-200" onClick={() => router.back()}>
                     <ArrowLeft style={{ width: '20px', height: '20px' }} />
                 </Button>
-                <h1 className="text-lg sm:text-xl font-semibold text-gray-900">Rental Details</h1>
+                <h1 className="text-lg sm:text-xl font-semibold text-gray-900">{property ? "Rental Details" : "Check Out"}</h1>
             </div>
-            <div className="bg-orange-100 text-orange-600 px-3 py-1 text-xs sm:text-sm font-medium">
-                {property.status || "Pending"}
-            </div>
+            {
+                property &&
+                <div className={` ${property.status === "Completed" ? "bg-green-200 text-green-700" : 'bg-orange-100 text-orange-600'} px-3 py-1 text-xs sm:text-sm font-semibold`}>
+                    {property?.status || "Pending"}
+                </div>
+            }
         </div>
     )
 }

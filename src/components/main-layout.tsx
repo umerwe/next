@@ -1,16 +1,18 @@
-"use client"
-import { useShouldShowSearchBar } from "@/hooks/show-search-bar"
-import Categories from "./categories"
-import Navbar from "./navbar/navbar"
+"use client";
+
+import { useLayoutVisibility } from "@/hooks/use-layout-visibility";
+import Categories from "./categories";
+import Navbar from "./navbar/navbar";
 
 const MainLayout = () => {
-    const shouldShowSearchBar = useShouldShowSearchBar()
-    return (
-        <div>
-            <Navbar />
-            {shouldShowSearchBar && <Categories />}
-        </div>
-    )
-}
+  const { showCategories } = useLayoutVisibility();
 
-export default MainLayout
+  return (
+    <div>
+      <Navbar />
+      {showCategories && <Categories />}
+    </div>
+  );
+};
+
+export default MainLayout;

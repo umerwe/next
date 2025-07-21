@@ -1,7 +1,7 @@
 import { MessageCircleMore, Star } from 'lucide-react'
 import Image from 'next/image'
 
-const HostInfo = ({ property }: { property: PropertyCardProps }) => {
+const HostInfo = ({ property }:DataProps) => {
     return (
         <div className="mt-2 md:-mt-12">
             <div className="flex items-center mb-4">

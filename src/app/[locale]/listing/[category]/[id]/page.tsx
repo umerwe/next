@@ -1,24 +1,48 @@
+import AboutProperty from "@/components/pages/details/about-property"
+import CoreDetails from "@/components/pages/details/core-details"
+import ExploreArea from "@/components/pages/details/explore-area"
+import GuestLikedPost from "@/components/pages/details/guest-liked."
+import Header from "@/components/pages/details/header"
+import ImageGalleryLayout from "@/components/pages/details/image-gallery-layout"
+import PricingActions from "@/components/pages/details/pricing-actions"
+import Rating from "@/components/pages/details/rating"
+import UpperTabs from "@/components/pages/details/upper-tabs"
 import { propertiesData } from "@/data/properties-data"
-import UpperTabs from "./upper-tabs"
-import LowerTabs from "./lower-tabs"
-import GuestReview from "./guest-review"
-import MostMentionedTabs from "./most-mentioned-tabs"
-import GuestImpressions from "./guest-impressions"
-import ImageGalleryLayout from "./image-gallery-layout"
-import Header from "./header"
-import HostInfo from "./host-info"
-import ExploreArea from "./explore-area"
-import PricingActions from "./pricing-actions"
-import AboutProperty from "./about-property"
-import CoreDetails from "./core-details"
 import Features from "@/components/features"
-import Rating from "./rating"
-import GuestLikedPost from "./guest-liked."
-import ServicesAmenities from "./services-amenities"
+import HostInfo from "@/components/pages/details/host-info"
+import LowerTabs from "@/components/pages/details/lower-tabs"
+import GuestReview from "@/components/pages/details/guest-review"
+import MostMentionedTabs from "@/components/pages/details/most-mentioned-tabs"
+import GuestImpressions from "@/components/pages/details/guest-impressions"
+import ServicesAmenities from "@/components/pages/details/services-amenities"
+import { vehiclesData } from "@/data/vehicles-data"
+import { roomsData } from "@/data/rooms-data"
+import { appartmentsData } from "@/data/appartments-data"
 
-const Details = ({ id }: {id:string}) => {
+type ListingData = PropertyCardProps | RoomCardProps | AppartmentsCardProps | VehicleCardProps;
 
-    const filteredData = propertiesData.filter((item) => item.id === id)
+
+const ListingItems = async ({ params }: ListingProps) => {
+    const { id, category } = await params
+
+    let data: ListingData[] = [];
+
+    switch (category) {
+        case "prp567":
+            data = propertiesData as ListingData[];
+            break;
+        case "veh341":
+            data = vehiclesData as ListingData[];
+            break;
+        case "room567":
+            data = roomsData as ListingData[];
+            break;
+        case "aprt987":
+            data = appartmentsData as ListingData[];
+            break;
+    }
+
+    const filteredData = data.filter((item) => item.id === id)
 
     if (filteredData.length === 0) {
         return (
@@ -27,12 +51,10 @@ const Details = ({ id }: {id:string}) => {
             </div>
         )
     }
-
     const property = filteredData[0]
 
     return (
         <div className="mx-3 sm:mx-7">
-
             <Header
                 property={property}
             />
@@ -51,7 +73,7 @@ const Details = ({ id }: {id:string}) => {
                         property={property}
                     />
 
-                    <Features
+                        <Features
                         freeCancellation={property.freeCancellation}
                         noPrepayment={property.noPrepayment}
                         layout="inline"
@@ -106,4 +128,6 @@ const Details = ({ id }: {id:string}) => {
     )
 }
 
-export default Details
+export default ListingItems
+
+

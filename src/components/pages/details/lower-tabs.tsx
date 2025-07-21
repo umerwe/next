@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const LowerTabs = ({id} : {id:string}) => {
+const LowerTabs = ({ id }: { id: string }) => {
     const lowerTabs = ['Rooms', 'Guest Reviews', 'Services & Amenities', 'Policies'];
     const [activesTab, setActivesTab] = useState('Rooms');
 

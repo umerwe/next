@@ -7,15 +7,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import React, { useState, useEffect } from "react";
 
-interface CardTopProps {
-  property:
-  | PropertyCardProps
-  | VehicleCardProps
-  | RoomCardProps
-  | AppartmentsCardProps;
-}
 
-const CardTop = ({ property }: CardTopProps) => {
+const CardTop = ({ property }: DataProps) => {
   const images: string[] =
     "images" in property
       ? property.images?.slice(0, 5) : ["/placeholder.svg"]

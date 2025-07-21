@@ -1,22 +1,25 @@
 export const propertiesData = [
   {
-    id: "1",
+    id: "A7X9L2",
     status: "Pending",
     images: [
       "/property-1.webp",
-      "/property-3.webp",
       "/property-2.webp",
+      "/property-3.webp",
+      "/property-4.jfif",
       "/property-5.jfif",
+      "/property-6.jfif",
       "/property-7.jfif",
       "/property-8.jfif",
-      "/property-4.jfif",
-      "/property-6.jfif"
+      "/property-1.webp",
+      "/property-2.webp",
+      "/property-3.webp"
     ],
     title: "Grand Horizon Hotel",
     location: "Mall Road, Lahore, Punjab 54000, Pakistan",
     freeCancellation: true,
     noPrepayment: true,
-    category: "properties",
+    category: "prp567",
     area: "2500sqft",
     beds: 4,
     baths: 3,
@@ -61,17 +64,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],
@@ -93,7 +95,7 @@ export const propertiesData = [
     ]
   },
   {
-    id: "2",
+    id: "B3K1Z8",
     status: "Approved",
     images: [
       "/property-2.webp",
@@ -103,12 +105,17 @@ export const propertiesData = [
       "/property-3.webp",
       "/property-5.jfif",
       "/property-6.jfif",
-      "/property-7.jfif"
+      "/property-7.jfif",
+      "/property-2.webp",
+      "/property-4.jfif",
+      "/property-1.webp",
+      "/property-8.jfif",
+      "/property-3.webp"
     ],
     title: "Lakefront Serenity",
     location: "Rue du Lac 12, Geneva, Switzerland",
     freeCancellation: true,
-    category: "properties",
+    category: "prp567",
     noPrepayment: true,
     area: "1800sqft",
     beds: 3,
@@ -154,17 +161,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],
@@ -187,8 +193,8 @@ export const propertiesData = [
   },
   {
     status: "Completed",
-    id: "3",
-    category: "properties",
+    id: "C9T7M4",
+    category: "prp567",
     images: [
       "/property-3.webp",
       "/property-1.webp",
@@ -197,7 +203,10 @@ export const propertiesData = [
       "/property-4.jfif",
       "/property-5.jfif",
       "/property-8.jfif",
-      "/property-7.jfif"
+      "/property-7.jfif",
+      "/property-3.webp",
+      "/property-1.webp",
+      "/property-2.webp"
     ],
     title: "Urban Escape",
     location: "Rue de Berne 25, Geneva, Switzerland",
@@ -245,17 +254,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],
@@ -277,8 +285,8 @@ export const propertiesData = [
     ]
   },
   {
-    category: "properties",
-    id: "4",
+    category: "prp567",
+    id: "D2P6W1",
     status: "Approved",
     images: [
       "/property-4.jfif",
@@ -288,7 +296,11 @@ export const propertiesData = [
       "/property-8.jfif",
       "/property-6.jfif",
       "/property-5.jfif",
-      "/property-7.jfif"
+      "/property-7.jfif",
+      "/property-4.jfif",
+      "/property-2.webp",
+      "/property-3.webp",
+      "/property-1.webp"
     ],
     title: "Skyline Penthouse",
     location: "Avenue de France 8, Geneva, Switzerland",
@@ -338,17 +350,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],
@@ -370,8 +381,8 @@ export const propertiesData = [
     ]
   },
   {
-    category: "properties",
-    id: "5",
+    category: "prp567",
+    id: "E5H3Q7",
     status: "Pending",
     images: [
       "/property-5.jfif",
@@ -381,7 +392,12 @@ export const propertiesData = [
       "/property-3.webp",
       "/property-8.jfif",
       "/property-6.jfif",
-      "/property-7.jfif"
+      "/property-7.jfif",
+      "/property-5.jfif",
+      "/property-2.webp",
+      "/property-4.jfif",
+      "/property-1.webp",
+      "/property-3.webp"
     ],
     title: "Cozy Lakeside Loft",
     location: "Quai du Mont-Blanc, Geneva, Switzerland",
@@ -430,17 +446,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],
@@ -462,8 +477,8 @@ export const propertiesData = [
     ]
   },
   {
-    category: "properties",
-    id: "6",
+    category: "prp567",
+    id: "F8N4J2",
     status: "Completed",
     images: [
       "/property-6.jfif",
@@ -473,7 +488,10 @@ export const propertiesData = [
       "/property-8.jfif",
       "/property-4.jfif",
       "/property-5.jfif",
-      "/property-7.jfif"
+      "/property-7.jfif",
+      "/property-6.jfif",
+      "/property-1.webp",
+      "/property-3.webp"
     ],
     title: "Heritage Manor",
     location: "F-7 Markaz, Islamabad, Pakistan",
@@ -523,17 +541,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],
@@ -555,8 +572,8 @@ export const propertiesData = [
     ]
   },
   {
-    category: "properties",
-    id: "7",
+    category: "prp567",
+    id: "G1V9R6",
     status: "Approved",
     images: [
       "/property-7.jfif",
@@ -566,7 +583,11 @@ export const propertiesData = [
       "/property-4.jfif",
       "/property-8.jfif",
       "/property-6.jfif",
-      "/property-5.jfif"
+      "/property-5.jfif",
+      "/property-7.jfif",
+      "/property-3.webp",
+      "/property-2.webp",
+      "/property-1.webp"
     ],
     title: "Old Town Charm",
     location: "Rue des Granges, Geneva, Switzerland",
@@ -614,17 +635,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],
@@ -646,8 +666,8 @@ export const propertiesData = [
     ]
   },
   {
-    category: "properties",
-    id: "8",
+    category: "prp567",
+    id: "H6U5Y3",
     status: "Completed",
     images: [
       "/property-8.jfif",
@@ -657,7 +677,11 @@ export const propertiesData = [
       "/property-3.webp",
       "/property-5.jfif",
       "/property-6.jfif",
-      "/property-7.jfif"
+      "/property-7.jfif",
+      "/property-8.jfif",
+      "/property-2.webp",
+      "/property-1.webp",
+      "/property-4.jfif"
     ],
     title: "Executive Suites",
     location: "Gulberg III, Lahore, Punjab 54000, Pakistan",
@@ -707,17 +731,16 @@ export const propertiesData = [
     reviews: [
       {
         id: 1,
-        user: "Guest User",
-        date: "April 15, 2025",
-        review:
-          "The hotel is in a great location, safe and comfortable, with a beautiful environment, rich breakfast and a variety of dinner options. I like it very much. It is the best hotel in the area and is worth recommending. I...",
+        user: "FinnishGuest",
+        date: "April 12, 2025",
+        review: "Fantastic stay and very comfortable. The amenities were impressive, and the host was super helpful.",
         image: "/user-img-1.png"
       },
       {
         id: 2,
-        user: "UNNYJIM",
-        date: "April 12, 2025",
-        review: "This is room view from window",
+        user: "TampereFan",
+        date: "April 9, 2025",
+        review: "The property was well-designed, and the amenities were top-notch. Perfect for a stay in the city!",
         image: "/user-img-2.png"
       }
     ],

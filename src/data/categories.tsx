@@ -5,21 +5,21 @@ export const categories = [
   {
     name: 'Property',
     icon: Home,
-    link: '/',
+    link: '/listing/prp567',
   },
   {
     name: 'Vehicles',
     icon: CarFront,
-    link: '/vehicles',
+    link: '/listing/veh341',
   },
   {
     name: 'Rooms',
     icon: BedSingle,
-    link: '/rooms',
+    link: '/listing/room567',
   },
   {
     name: 'Appartments',
     icon: BuildingOffice2Icon,
-    link: '/appartments',
+    link: '/listing/aprt987',
   },
 ];

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { MapPin, Star } from "lucide-react"
 
-const CoreDetails = ({ property }: { property: PropertyCardProps }) => {
+const CoreDetails = ({ property }: DataProps) => {
     return (
         <div>
             <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-2 md:mb-1 flex flex-col sm:flex-row sm:items-center gap-2">
