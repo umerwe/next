@@ -23,7 +23,7 @@ const CardBody = ({ property }: DataProps) => {
   const hasFeatures = "freeCancellation" in property;
 
   return (
-    <CardContent className="px-2">
+    <CardContent className="px-2 -mt-1">
       {/* Title + Rating */}
       <div className="flex items-center justify-between">
         <h3 className="font-semibold text-gray-900 text-md min-[500px]:text-lg sm:text-xl truncate">{property.title}</h3>
@@ -96,16 +96,16 @@ const CardBody = ({ property }: DataProps) => {
           <div className="w-full -mt-2">
             <p className="text-xs text-gray-custom mb-2">{property.description}</p>
             <div className="flex justify-between text-xs font-medium text-gray-custom">
-              <div className="flex items-center gap-1">
-                <Fuel className="w-4 h-4" />
+              <div className="flex items-center gap-1 sm:gap-1.5">
+                <Fuel className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span className="pb-1">{property.fuelCapacity}</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <Settings className="w-4 h-4" />
+              <div className="flex items-center gap-1 sm:gap-1.5">
+                <Settings className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span className="pb-1">{property.transmission}</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <Users className="w-4 h-4" />
+              <div className="flex items-center gap-1 sm:gap-1.5">
+                <Users className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span className="pb-1">{property.capacity}</span>
               </div>
             </div>

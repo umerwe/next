@@ -59,7 +59,7 @@ const CardTop = ({ property }: DataProps) => {
           {images.map((imgUrl, index) => (
             <div
               key={index}
-              className="relative flex-[0_0_100%] h-44 min-[500px]:h-50 sm:h-64"
+              className="relative flex-[0_0_100%] h-40 min-[500px]:h-50 sm:h-64"
             >
               <Image
                 src={imgUrl}
