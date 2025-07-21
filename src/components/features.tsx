@@ -19,8 +19,8 @@ const Features = ({ freeCancellation, noPrepayment, layout = "list" }: FeaturesP
     <ul className="space-y-1 mb-2">
       {features.map((feature, index) => (
         <li key={index} className="flex items-center gap-1 text-[#0E8800]">
-          <Check className="h-4 w-4 shrink-0 mt-1" />
-          <span className="text-sm leading-5">{feature.labelList}</span>
+          <Check className="h-3 w-3 sm:h-3 sm:w-4 shrink-0 mt-1" />
+          <span className="text-xs min-[500px]:text-sm leading-5 truncate">{feature.labelList}</span>
         </li>
       ))}
     </ul>

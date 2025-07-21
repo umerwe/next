@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: ListingProps): Promise<Metada
   };
 }
 
-const ListingPage = async ({ params }: ListingProps) => {
+const CategoryPage = async ({ params }: ListingProps) => {
   const { category } = await params;
 
   switch (category) {
@@ -60,4 +60,4 @@ const ListingPage = async ({ params }: ListingProps) => {
   }
 };
 
-export default ListingPage
+export default CategoryPage

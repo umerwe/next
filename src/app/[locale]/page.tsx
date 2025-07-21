@@ -14,7 +14,7 @@ export default function HomePage() {
         apartments={appartmentsData}
         rooms={roomsData}
       />
-      <Link href={'/listing/prp567'} className="flex justify-center mt-3">
+      <Link href={'/listing'} className="flex justify-center mt-3">
         <Button variant="destructive">Show more</Button>
       </Link>
     </div>

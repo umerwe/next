@@ -40,10 +40,10 @@ const CardTop = ({ property }: DataProps) => {
   return (
     <CardHeader className="p-0 relative">
       {/* Guest Favorite Badge and Heart Icon */}
-      <div className="absolute top-3 left-4 right-4 flex justify-between items-center z-10">
+      <div className="absolute top-2 sm:top-3 left-4 right-2 sm:right-4 flex justify-between items-center z-10">
         <div>
           {property.isGuestFavorite && (
-            <div className="bg-white/90 backdrop-blur-sm px-3 rounded-full pb-1">
+            <div className="bg-white/90 backdrop-blur-sm px-3 rounded-full hidden sm:block pb-1">
               <span className="text-xs font-semibold">Guest favorite</span>
             </div>
           )}
@@ -59,14 +59,13 @@ const CardTop = ({ property }: DataProps) => {
           {images.map((imgUrl, index) => (
             <div
               key={index}
-              className="relative flex-[0_0_100%] h-64"
+              className="relative flex-[0_0_100%] h-44 min-[500px]:h-50 sm:h-64"
             >
               <Image
                 src={imgUrl}
                 alt={property.title}
                 fill
                 className="object-cover rounded-2xl"
-                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           ))}

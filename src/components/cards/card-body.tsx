@@ -23,20 +23,20 @@ const CardBody = ({ property }: DataProps) => {
   const hasFeatures = "freeCancellation" in property;
 
   return (
-    <CardContent className="px-2 -mt-7">
+    <CardContent className="px-2">
       {/* Title + Rating */}
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-gray-900 text-xl truncate">{property.title}</h3>
-        <div className="flex items-center gap-1">
-          <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-          <span className="text-sm text-header">{property.rating}</span>
-          <span className="text-sm text-header">({property.reviewCount})</span>
+        <h3 className="font-semibold text-gray-900 text-md min:[500px]:text-lg sm:text-xl truncate">{property.title}</h3>
+        <div className="flex items-center gap-1 text-xs sm:text-sm">
+          <Star className="w-3 h-3 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" />
+          <span className="text-header">{property.rating}</span>
+          <span className="text-header">({property.reviewCount})</span>
         </div>
       </div>
 
       {/* Location */}
       {hasLocation && property.category!=="veh341" && (
-        <p className="text-sm text-[#00CC99] font-medium mb-2 truncate px-1">
+        <p className="text-xs min-[500px]:text-sm text-[#00CC99] font-medium mb-2 truncate px-1">
           Location: {property.location}
         </p>
       )}

@@ -1,7 +1,12 @@
-import { BedSingle, CarFront, Home } from 'lucide-react';
+import { AArrowDownIcon, BedSingle, CarFront, Home } from 'lucide-react';
 import { BuildingOffice2Icon } from '@heroicons/react/24/outline';
 
 export const categories = [
+  {
+    name: 'All',
+    icon: AArrowDownIcon,
+    link: '/listing',
+  },
   {
     name: 'Property',
     icon: Home,
