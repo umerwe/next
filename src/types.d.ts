@@ -9,6 +9,20 @@ interface ListingProps {
   }>
 }
 
+interface ListingData {
+    id: string;
+    title: string;
+    images: string[];
+    rating: number;
+    reviewCount: number;
+    area?: string;
+    beds?: number;
+    guests?: number;
+    passengers?: number;
+    features?: string[];
+    freeCancellation?: boolean;
+}
+
 interface PropertyCardProps {
   id: string;
   category: string,

@@ -11,31 +11,11 @@ import { roomsData } from "@/data/rooms-data";
 import { appartmentsData } from "@/data/appartments-data";
 import Image from "next/image";
 
-interface ListingData {
-    id: string;
-    title: string;
-    images: string[];
-    rating: number;
-    reviewCount: number;
-    area?: string;
-    beds?: number;
-    guests?: number;
-    passengers?: number;
-    features?: string[];
-    freeCancellation?: boolean;
-}
-
-interface ListingProps {
-    params: Promise<{
-        id: string;
-        category: string;
-    }>;
-}
-
 const CheckoutPage = async ({ params }: ListingProps) => {
     const { id, category } = await params;
+
     let listingsData: ListingData[] = [];
-    
+
     switch (category) {
         case "prp567":
             listingsData = propertiesData as ListingData[];
@@ -54,7 +34,7 @@ const CheckoutPage = async ({ params }: ListingProps) => {
     }
 
     const matchingListings = listingsData.filter((item) => item.id === id);
-    
+
     if (matchingListings.length === 0) {
         return (
             <div className="p-10 text-center text-gray-600">
@@ -89,7 +69,7 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                     {/* Left Column - Form */}
                     <div className="space-y-6">
                         {/* Guest Information */}
-                        <div className="bg-white rounded-lg py-6">
+                        <div className="bg-white rounded-lg px-2 py-6">
                             <h2 className="text-xl font-semibold text-gray-900 mb-2">
                                 {"Who's checking in?"}
                             </h2>
@@ -108,7 +88,7 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                     </div>
 
                     {/* Right Column - Booking Summary */}
-                    <div className="space-y-6 px-0 lg:px-12 mb-20">
+                    <div className="space-y-6 px-2 lg:px-12 mb-20">
                         {/* Listing Information */}
                         <div className="bg-white rounded-lg py-2">
                             <div className="flex gap-4 mb-4">
@@ -128,11 +108,10 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                                         {[...Array(5)].map((_, i) => (
                                             <Star
                                                 key={i}
-                                                className={`w-4 h-4 ${
-                                                    i < Math.floor(listing.rating || 0) 
-                                                        ? "fill-yellow-400 text-yellow-400" 
+                                                className={`w-4 h-4 ${i < Math.floor(listing.rating || 0)
+                                                        ? "fill-yellow-400 text-yellow-400"
                                                         : "text-gray-300"
-                                                }`}
+                                                    }`}
                                             />
                                         ))}
                                     </div>
@@ -141,11 +120,11 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                                             {(listing.rating || 0).toFixed(1)}/5
                                         </span>
                                         <span className="text-md font-medium text-teal-600">
-                                            {(listing.rating || 0) >= 4.5 
-                                                ? "Excellent" 
-                                                : (listing.rating || 0) >= 4.0 
-                                                ? "Good" 
-                                                : "Average"}
+                                            {(listing.rating || 0) >= 4.5
+                                                ? "Excellent"
+                                                : (listing.rating || 0) >= 4.0
+                                                    ? "Good"
+                                                    : "Average"}
                                         </span>
                                         <span className="text-sm text-gray-500">
                                             {listing.reviewCount || 0} reviews
@@ -218,7 +197,7 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                                 />
                             </div>
                         </div>
-                        
+
                         <PriceDetails />
 
                         {/* Cancellation Policy */}
