@@ -50,7 +50,7 @@ const MainCard = ({ properties, vehicles, rooms, apartments, isHome, isAll }: Ma
         ))}
       </div>
       {!isHome && (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 mb-10">
           <Button variant="destructive">Show more</Button>
         </div>
       )}

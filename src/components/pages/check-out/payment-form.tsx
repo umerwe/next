@@ -14,7 +14,7 @@ const PaymentForm = () => {
     const [billingZip, setBillingZip] = useState("")
 
     return (
-        <div className="bg-white rounded-lg p-6">
+        <div className="bg-white rounded-lg p-2 sm:p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">Choose how to pay</h2>
 
             {/* Payment Options */}
@@ -131,7 +131,7 @@ const PaymentForm = () => {
 
                     {/* Policy Section */}
                     <div className="max-w-2xl mx-auto mt-10 space-y-4">
-                        <div className="bg-white border border-gray-200 rounded-2xl px-6 py-4 shadow-sm">
+                        <div className="bg-white border border-gray-200 rounded-2xl px-3.5 sm:px-6 py-4 shadow-sm">
                             <button
                                 onClick={() => setIsPolicyExpanded(!isPolicyExpanded)}
                                 className="flex items-center justify-between w-full text-left"

@@ -82,14 +82,14 @@ const CheckoutPage = async ({ params }: ListingProps) => {
         : "This booking cannot be modified, and no refund will be given if you cancel it. If you fail to check in, a penalty equivalent to the cancellation fee will be charged.";
 
     return (
-        <div className="min-h-screen">
-            <div className="max-w-7xl mx-auto px-4">
+        <div className="min-h-screen mx-3 sm:mx-7">
+            <div className="max-w-7xl mx-auto">
                 <Header />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-12">
                     {/* Left Column - Form */}
                     <div className="space-y-6">
                         {/* Guest Information */}
-                        <div className="bg-white rounded-lg p-6">
+                        <div className="bg-white rounded-lg py-6">
                             <h2 className="text-xl font-semibold text-gray-900 mb-2">
                                 {"Who's checking in?"}
                             </h2>
@@ -108,9 +108,9 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                     </div>
 
                     {/* Right Column - Booking Summary */}
-                    <div className="space-y-6 px-0 lg:px-12">
+                    <div className="space-y-6 px-0 lg:px-12 mb-20">
                         {/* Listing Information */}
-                        <div className="bg-white rounded-lg p-6">
+                        <div className="bg-white rounded-lg py-2">
                             <div className="flex gap-4 mb-4">
                                 <div className="w-24 h-24 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0 relative">
                                     <Image
@@ -121,7 +121,7 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                                     />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                                    <h3 className="text-lg font-semibold text-gray-900 sm:mb-1">
                                         {listing.title || "Untitled Listing"}
                                     </h3>
                                     <div className="flex items-center gap-1 mb-2">
@@ -156,7 +156,7 @@ const CheckoutPage = async ({ params }: ListingProps) => {
 
                             {/* Room/Vehicle Details */}
                             <div className="pt-4">
-                                <h4 className="font-semibold text-gray-900 mb-3">{roomType}</h4>
+                                <h4 className="font-semibold text-gray-900 mb-1 sm:mb-3">{roomType}</h4>
                                 <div className="space-y-2 text-sm">
                                     <div className="flex flex-wrap items-center gap-2">
                                         <Users className="w-4 h-4 text-gray-400" />
@@ -192,8 +192,8 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                         </div>
 
                         {/* Check-in/Check-out Time */}
-                        <div className="bg-white rounded-lg px-6">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div className="bg-white rounded-lg px-2 sm:px-6">
+                            <div className="flex flex-wrap justify-between gap-4">
                                 <CheckInOutTime
                                     date={checkInDate}
                                     time={checkInTime}
@@ -222,7 +222,7 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                         <PriceDetails />
 
                         {/* Cancellation Policy */}
-                        <div className="bg-white rounded-lg p-6">
+                        <div className="bg-white rounded-lg sm:p-6">
                             <h4 className="text-lg font-semibold text-gray-900 mb-2">
                                 Cancellation Policy
                             </h4>
