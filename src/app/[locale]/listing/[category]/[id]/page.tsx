@@ -66,7 +66,6 @@ const ListingItems = async ({ params }: ListingProps) => {
             <UpperTabs id={id} />
 
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 px-3 md:px-6">
-
                 {/* LEFT COLUMN */}
                 <div className="w-full md:w-3/5 lg:w-2/3 flex flex-col gap-4">
                     <CoreDetails
@@ -101,7 +100,6 @@ const ListingItems = async ({ params }: ListingProps) => {
                         property={property}
                     />
                 </div>
-
             </div>
 
             <div className="sm:px-3">

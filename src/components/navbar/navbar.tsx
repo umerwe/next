@@ -39,13 +39,13 @@ export default function Navbar() {
           </div>
 
           <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-white focus:outline-none">
-            {mobileOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
+            {mobileOpen ? <XMarkIcon className="w-10 h-10" /> : <Bars3Icon className="w-10 h-10" />}
           </button>
         </div>
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-4">
+        <div className="md:hidden px-4 pb-4 space-y-10">
           {navLinks.map((link) => (
             <Link
               key={link.href}

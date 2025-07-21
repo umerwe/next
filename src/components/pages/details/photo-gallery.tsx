@@ -25,7 +25,7 @@ export const PhotoGallery = ({ images, open, onClose }: PhotoGalleryProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="w-full max-w-6xl h-[90vh] sm:h-[80vh] md:h-[85vh] p-0 flex flex-col">
+      <DialogContent className="max-w-sm sm:max-w-6xl h-[90vh] sm:h-[80vh] md:h-[85vh] p-0 flex flex-col">
         <VisuallyHidden>
           <DialogTitle>Photo Gallery</DialogTitle>
         </VisuallyHidden>
