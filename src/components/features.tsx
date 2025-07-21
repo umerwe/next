@@ -20,7 +20,7 @@ const Features = ({ freeCancellation, noPrepayment, layout = "list" }: FeaturesP
       {features.map((feature, index) => (
         <li key={index} className="flex items-center gap-1 text-[#0E8800]">
           <Check className="h-3 w-3 sm:h-3 sm:w-4 shrink-0 mt-1" />
-          <span className="text-xs min-[500px]:text-sm leading-5 truncate">{feature.labelList}</span>
+          <span className="text-xs min-[500px]:text-sm leading-5 max-[600px]:truncate">{feature.labelList}</span>
         </li>
       ))}
     </ul>
