@@ -26,7 +26,7 @@ const CardBody = ({ property }: DataProps) => {
     <CardContent className="px-2">
       {/* Title + Rating */}
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-gray-900 text-md min:[500px]:text-lg sm:text-xl truncate">{property.title}</h3>
+        <h3 className="font-semibold text-gray-900 text-md min-[500px]:text-lg sm:text-xl truncate">{property.title}</h3>
         <div className="flex items-center gap-1 text-xs sm:text-sm">
           <Star className="w-3 h-3 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" />
           <span className="text-header">{property.rating}</span>
@@ -36,7 +36,7 @@ const CardBody = ({ property }: DataProps) => {
 
       {/* Location */}
       {hasLocation && property.category!=="veh341" && (
-        <p className="text-xs min-[500px]:text-sm text-[#00CC99] font-medium mb-2 truncate px-1">
+        <p className="text-xs min-[500px]:text-sm text-[#00CC99] font-medium mb-2 truncate pl-1">
           Location: {property.location}
         </p>
       )}
@@ -53,40 +53,40 @@ const CardBody = ({ property }: DataProps) => {
       {/* Specs */}
       <div className="flex justify-between text-xs font-medium text-gray-custom mt-2">
         {hasArea && (
-          <div className="flex items-center gap-1">
-            <RectangleGroupIcon className="w-4 h-4" />
+          <div className="flex items-center gap-1 text-xs">
+            <RectangleGroupIcon className="w-3 h-3 sm:w-4 sm:h-4" />
             <span>{property.area}</span>
           </div>
         )}
 
         {/* Room Wifi */}
         {isRoom && (
-          <div className="flex items-center gap-1">
-            <Wifi className="w-4 h-4" />
+          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
+            <Wifi className="w-3 h-3" />
             <span>{property.wifi ? "WIFI" : "NO"}</span>
           </div>
         )}
 
         {/* Beds */}
         {hasBeds && (
-          <div className="flex items-center gap-1">
-            <BedSingle className="w-4 h-4" />
+          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
+            <BedSingle className="w-3 h-3" />
             <span>{property.beds}</span>
           </div>
         )}
 
         {/* Baths */}
         {hasBaths && (
-          <div className="flex items-center gap-1">
-            <Bath className="w-4 h-4" />
+          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
+            <Bath className="w-3 h-3" />
             <span>{property.baths}</span>
           </div>
         )}
 
         {/* Guests */}
         {hasGuests && (
-          <div className="flex items-center gap-1">
-            <AirVent className="w-4 h-4" />
+          <div className="flex items-center gap-1 text-xs min-[500px]:text-sm">
+            <AirVent className="w-3 h-3" />
             <span>{property.guests}</span>
           </div>
         )}

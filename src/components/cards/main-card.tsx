@@ -39,7 +39,7 @@ const MainCard = ({ properties, vehicles, rooms, apartments, isHome, isAll }: Ma
               <div className="w-[40%] min:[500px]:w-[35%] sm:w-full">
                 <CardHeader property={property} />
               </div>
-              <div className="flex flex-col gap-2 w-[60%] min:[500px]:w-[65%] sm:w-full">
+              <div className="flex flex-col mt-1 sm:mt-0 gap-2 w-[60%] min:[500px]:w-[65%] sm:w-full">
                 <CardBody property={property} />
                 <CardFooter property={property} />
               </div>

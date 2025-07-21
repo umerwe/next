@@ -63,7 +63,7 @@ const Categories = () => {
       </div>
 
       {/* 🔵 Mobile dropdown (below md) */}
-      <div className="md:hidden flex-grow max-w-md relative" ref={dropdownRef}>
+      <div className="md:hidden flex-grow max-w-50 relative" ref={dropdownRef}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           className="w-full flex items-center justify-between gap-3 px-5 py-3 rounded-lg border-2 border-t-[#01c89b] border-r-[#01c89b] border-b-[#059afc] border-l-[#059afc] bg-white hover:bg-gray-50 transition-colors duration-200 shadow-sm"
