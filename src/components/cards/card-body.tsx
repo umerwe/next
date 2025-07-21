@@ -11,6 +11,7 @@ import {
 import { RectangleGroupIcon } from "@heroicons/react/24/outline";
 import { CardContent } from "@/components/ui/card";
 import Features from "../features";
+import SpecItem from "./spec-item";
 
 const CardBody = ({ property }: DataProps) => {
   const isVehicle = "fuelCapacity" in property;
@@ -35,7 +36,7 @@ const CardBody = ({ property }: DataProps) => {
       </div>
 
       {/* Location */}
-      {hasLocation && property.category!=="veh341" && (
+      {hasLocation && property.category !== "veh341" && (
         <p className="text-xs min-[500px]:text-sm text-[#00CC99] font-medium mb-2 truncate pl-1">
           Location: {property.location}
         </p>
@@ -53,61 +54,58 @@ const CardBody = ({ property }: DataProps) => {
       {/* Specs */}
       <div className="flex justify-between text-xs font-medium text-gray-custom mt-2">
         {hasArea && (
-          <div className="flex items-center gap-1 text-xs">
-            <RectangleGroupIcon className="w-3 h-3 sm:w-4 sm:h-4" />
-            <span>{property.area}</span>
-          </div>
+          <SpecItem
+            icon={<RectangleGroupIcon className="w-3 h-3 sm:w-4 sm:h-4" />}
+            text={property.area}
+          />
         )}
 
-        {/* Room Wifi */}
         {isRoom && (
-          <div className="flex items-center gap-1 text-xs">
-            <Wifi className="w-3 h-3 sm:w-4 sm:h-4" />
-            <span>{property.wifi ? "WIFI" : "NO"}</span>
-          </div>
+          <SpecItem
+            icon={<Wifi className="w-3 h-3 sm:w-4 sm:h-4" />}
+            text={property.wifi ? "WIFI" : "NO"}
+          />
         )}
 
-        {/* Beds */}
         {hasBeds && (
-          <div className="flex items-center gap-1 text-xs">
-            <BedSingle className="w-3 h-3 sm:w-4 sm:h-4" />
-            <span>{property.beds}</span>
-          </div>
+          <SpecItem
+            icon={<BedSingle className="w-3 h-3 sm:w-4 sm:h-4" />}
+            text={property.beds}
+          />
         )}
 
-        {/* Baths */}
         {hasBaths && (
-          <div className="flex items-center gap-1 text-xs">
-            <Bath className="w-3 h-3 sm:w-4 sm:h-4" />
-            <span>{property.baths}</span>
-          </div>
+          <SpecItem
+            icon={<Bath className="w-3 h-3 sm:w-4 sm:h-4" />}
+            text={property.baths}
+          />
         )}
 
-        {/* Guests */}
         {hasGuests && (
-          <div className="flex items-center gap-1 text-xs">
-            <AirVent className="w-3 h-3 sm:w-4 sm:h-4" />
-            <span>{property.guests}</span>
-          </div>
+          <SpecItem
+            icon={<AirVent className="w-3 h-3 sm:w-4 sm:h-4" />}
+            text={property.guests}
+          />
         )}
 
         {/* Vehicle Only */}
         {isVehicle && (
           <div className="w-full -mt-2">
             <p className="text-xs text-gray-custom mb-2">{property.description}</p>
+
             <div className="flex justify-between text-xs font-medium text-gray-custom">
-              <div className="flex items-center gap-1 sm:gap-1.5">
-                <Fuel className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span className="pb-1">{property.fuelCapacity}</span>
-              </div>
-              <div className="flex items-center gap-1 sm:gap-1.5">
-                <Settings className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span className="pb-1">{property.transmission}</span>
-              </div>
-              <div className="flex items-center gap-1 sm:gap-1.5">
-                <Users className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span className="pb-1">{property.capacity}</span>
-              </div>
+              <SpecItem
+                icon={<Fuel className="w-3 h-3 sm:w-4 sm:h-4" />}
+                text={property.fuelCapacity}
+              />
+              <SpecItem
+                icon={<Settings className="w-3 h-3 sm:w-4 sm:h-4" />}
+                text={property.transmission}
+              />
+              <SpecItem
+                icon={<Users className="w-3 h-3 sm:w-4 sm:h-4" />}
+                text={property.capacity}
+              />
             </div>
           </div>
         )}
