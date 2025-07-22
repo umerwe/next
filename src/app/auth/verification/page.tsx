@@ -1,4 +1,3 @@
-"use client"
 import VerificationForm from "@/components/auth/verification-form"
 import { Metadata } from "next";
 import Image from "next/image"
