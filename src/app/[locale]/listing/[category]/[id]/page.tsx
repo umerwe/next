@@ -57,6 +57,7 @@ const ListingItems = async ({ params }: ListingProps) => {
         <div className="mx-3 sm:mx-7">
             <Header
                 property={property}
+                title="Rental Details"
             />
 
             <ImageGalleryLayout

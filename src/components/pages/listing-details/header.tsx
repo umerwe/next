@@ -4,18 +4,19 @@ import { ArrowLeft } from "lucide-react"
 import { useRouter } from "next/navigation";
 
 interface HeaderProps {
-    property?: PropertyCardProps | RoomCardProps | AppartmentsCardProps | VehicleCardProps
+    property?: PropertyCardProps | RoomCardProps | AppartmentsCardProps | VehicleCardProps;
+    title?:string
 }
 
-const Header = ({ property }: HeaderProps) => {
+const Header = ({ property,title }: HeaderProps) => {
     const router = useRouter();
     return (
         <div className="flex items-center justify-between pt-6 bg-white">
-            <div className="flex items-center gap-2 sm:gap-4">
-                <Button variant="ghost" className="px-0 py-5.5 bg-gray-200" onClick={() => router.back()}>
-                    <ArrowLeft style={{ width: '20px', height: '20px' }} />
+            <div className="flex items-center gap-3">
+                <Button variant="ghost" className="bg-gray-100" onClick={() => router.back()}>
+                    <ArrowLeft style={{ width: '18px', height: '18px' }} />
                 </Button>
-                <h1 className="text-lg sm:text-xl font-semibold text-gray-900">{property ? "Rental Details" : "Check Out"}</h1>
+                <h1 className="text-lg font-semibold text-gray-900">{title}</h1>
             </div>
             {
                 property &&

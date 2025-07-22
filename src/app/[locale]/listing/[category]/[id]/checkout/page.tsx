@@ -64,7 +64,9 @@ const CheckoutPage = async ({ params }: ListingProps) => {
     return (
         <div className="min-h-screen mx-3 sm:mx-7">
             <div className="max-w-7xl mx-auto">
-                <Header />
+                <Header
+                    title="Checkout"
+                />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-12">
                     {/* Left Column - Form */}
                     <div className="space-y-6">
@@ -109,8 +111,8 @@ const CheckoutPage = async ({ params }: ListingProps) => {
                                             <Star
                                                 key={i}
                                                 className={`w-4 h-4 ${i < Math.floor(listing.rating || 0)
-                                                        ? "fill-yellow-400 text-yellow-400"
-                                                        : "text-gray-300"
+                                                    ? "fill-yellow-400 text-yellow-400"
+                                                    : "text-gray-300"
                                                     }`}
                                             />
                                         ))}

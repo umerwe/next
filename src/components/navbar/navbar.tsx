@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { BellIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import SearchBar from "./search-bar/search-bar";
+import ProfileDropdown from "./profile-dropdown";
 import { navLinks } from "@/data/navlinks";
 import Brand from "./brand";
 import { useLayoutVisibility } from "@/hooks/use-layout-visibility";
@@ -19,38 +19,45 @@ export default function Navbar() {
         <Brand />
 
         <div className="flex items-center space-x-4">
+          {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-10 mr-10">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-white hover:underline">
+              <Link 
+                key={link.href} 
+                href={link.href} 
+                className="text-white hover:underline transition-colors duration-200"
+              >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          <div className="flex items-center bg-white rounded-full pl-3 pr-2 py-1 space-x-2 w-fit">
-            <BellIcon className="h-5 w-5 text-green-500" />
-            <Image
-              src="/profile-img.webp"
-              alt="User Avatar"
-              className="rounded-full"
-              width={28}
-              height={28}
-            />
-          </div>
+          {/* Profile Dropdown */}
+          <ProfileDropdown />
 
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-white focus:outline-none">
-            {mobileOpen ? <XMarkIcon className="w-10 h-10" /> : <Bars3Icon className="w-10 h-10" />}
+          {/* Mobile Menu Toggle */}
+          <button 
+            onClick={() => setMobileOpen(!mobileOpen)} 
+            className="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-header rounded-md p-1"
+            aria-label="Toggle mobile menu"
+          >
+            {mobileOpen ? (
+              <XMarkIcon className="w-8 h-8" />
+            ) : (
+              <Bars3Icon className="w-8 h-8" />
+            )}
           </button>
         </div>
       </nav>
 
+      {/* Mobile Navigation Menu */}
       {mobileOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-10">
+        <div className="md:hidden px-4 pb-4 space-y-4 border-t border-white/10">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block text-white hover:underline"
+              className="block text-white hover:underline py-2 transition-colors duration-200"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -59,6 +66,7 @@ export default function Navbar() {
         </div>
       )}
 
+      {/* Search Bar */}
       {showSearchBar && <SearchBar />}
     </div>
   );
