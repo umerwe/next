@@ -40,7 +40,7 @@ const RegisterForm = () => {
             {/* Header */}
             <div className="mb-2 text-center">
                 <h1 className="text-2xl font-bold text-gray-900 mb-1">Create New Account!</h1>
-                <p className="text-gray-custom text-sm">Let`&apos;`s create new account to explore more</p>
+                <p className="text-gray-custom text-sm">Let&apos;s create new account to explore more</p>
             </div>
 
             {/* Form */}
