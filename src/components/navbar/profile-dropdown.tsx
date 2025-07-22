@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { BellIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const profileMenuItems = [
   { label: "View profile", href: "/profile" },
@@ -90,19 +91,18 @@ export default function ProfileDropdown() {
 
           {/* Menu Items */}
           <div className="py-1">
-            {profileMenuItems.map((item, index) => (
-              <a
+            {profileMenuItems.map((item, index) => (  
+              <Link
                 key={index}
                 href={item.href}
-                className={`block px-4 py-2 text-sm transition-colors duration-150 ${
-                  item.isLogout
+                onClick={() => setIsOpen(false)}
+                className={`block px-4 py-2 text-sm transition-colors duration-150 ${item.isLogout
                     ? "text-red-600 hover:bg-red-50 hover:text-red-700"
                     : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                }`}
-                onClick={() => setIsOpen(false)}
+                  }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

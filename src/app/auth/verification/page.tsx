@@ -1,16 +1,17 @@
-"use client";
-import RegisterForm from "@/components/auth/register-form";
-import Image from "next/image";
-export default function RegisterPage() {
+"use client"
+import VerificationForm from "@/components/auth/verification-form"
+import Image from "next/image"
 
+const Verification = () => {
     return (
         <div className="min-h-screen flex">
             {/* Left Side - Form */}
             <div className="w-full lg:w-[30%] flex items-center justify-center p-4 lg:p-8 max-[1024px]:bg-gradient-to-r from-aqua to-blue bg-gray-50">
-                <div className="w-full sm:w-[80%] lg:w-auto lg:absolute top-12.5 left-[14%] xl:left-[17%] 2xl:left-[19%] z-10">
-                    <RegisterForm />
+                <div className="w-full sm:w-[80%] lg:w-auto lg:absolute top-34 left-[17%] xl:left-[19%] 2xl:left-[21%] z-10">
+                    <VerificationForm />
                 </div>
             </div>
+
 
             {/* Right Side - Background with Illustration */}
             <div className="hidden lg:w-[70%] lg:flex flex-1 relative bg-auth overflow-hidden z-1">
@@ -28,5 +29,7 @@ export default function RegisterPage() {
                 </div>
             </div>
         </div>
-    );
+    )
 }
+
+export default Verification
