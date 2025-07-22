@@ -1,4 +1,3 @@
-// components/auth/AuthLayout.tsx
 "use client"
 import Image from "next/image"
 import type { ReactNode } from "react"

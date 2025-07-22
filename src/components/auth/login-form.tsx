@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react"
 import Link from "next/link"
 import { EyeIcon, EyeSlashIcon, EnvelopeIcon, LockClosedIcon } from "@heroicons/react/24/outline"

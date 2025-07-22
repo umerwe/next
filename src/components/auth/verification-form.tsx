@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react"
 import { EnvelopeIcon } from "@heroicons/react/24/outline"
 import { Button } from "@/components/ui/button"
