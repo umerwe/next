@@ -1,4 +1,4 @@
-import Main from "@/components/cards/main-card";
+import MainCard from "@/components/cards/main-card";
 import { Button } from "@/components/ui/button";
 import { appartmentsData } from "@/data/appartments-data";
 import { propertiesData } from "@/data/properties-data";
@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="mb-20">
-      <Main
+      <MainCard
         isHome={true}
         properties={propertiesData}
         apartments={appartmentsData}
