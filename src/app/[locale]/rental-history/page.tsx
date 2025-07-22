@@ -11,12 +11,12 @@ const RentalHistory = () => {
             <Header
                 title="Rental History"
             />
-            <div className="flex flex-col justify-start items-center gap-2 text-center -mt-6">
+            <div className="flex flex-col justify-start items-center gap-2 text-center">
                 <Image
                     src="/rental-img.png"
                     alt="rental-history-img"
                     width={300}
-                    height={800}
+                    height={300}
                 />
 
                 <h1 className="font-semibold text-xl -mt-3">No Saved Rental found</h1>

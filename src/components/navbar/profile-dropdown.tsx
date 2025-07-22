@@ -12,7 +12,6 @@ const profileMenuItems = [
   { label: "Chat", href: "/chat" },
   { label: "Emergency Assistance", href: "/emergency" },
   { label: "Help Center", href: "/help" },
-  { label: "Rental History", href: "/rental-history-2" },
   { label: "Security Settings", href: "/security" },
   { label: "Log out", href: "/logout", isLogout: true }
 ];
