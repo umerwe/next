@@ -12,7 +12,7 @@ const profileMenuItems = [
   { label: "Notification", href: "/notifications" },
   { label: "Chat", href: "/chat" },
   { label: "Emergency Assistance", href: "/emergency" },
-  { label: "Help Center", href: "/help" },
+  { label: "Help Center", href: "/help-center" },
   { label: "Security Settings", href: "/security" },
   { label: "Log out", href: "/logout", isLogout: true }
 ];

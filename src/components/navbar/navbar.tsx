@@ -32,7 +32,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Profile Dropdown */}
           <ProfileDropdown />
 
           {/* Mobile Menu Toggle */}

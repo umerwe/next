@@ -55,7 +55,7 @@
   --gradient-button: linear-gradient(270deg, var(--aqua), var(--blue));
   --gradient-button-auth: linear-gradient(270deg, var(--blue), var(--aqua));
   --gradient-header: linear-gradient(270deg, var(--dark), var(--aqua));
-  --gradient-text: linear-gradient(270deg, var(--aqua), var(--blue));
+  --gradient-text: linear-gradient(270deg, var(--blue),var(--aqua));
   --gradient-border: linear-gradient(270deg, var(--aqua), var(--blue));
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -137,7 +137,7 @@
 
   @layer utilities {
     .bg-header {
-      background: var(--gradient-button);
+      background: var(--gradient-button-auth);
       /* background: var(--gradient-header); */
     }
     .bg-auth {
