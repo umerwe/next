@@ -1,4 +1,4 @@
-import AboutProperty from "@/components/pages/listing-details/about-property"
+import AboutListing from "@/components/pages/listing-details/about-listing"
 import CoreDetails from "@/components/pages/listing-details/core-details"
 import ExploreArea from "@/components/pages/listing-details/explore-area"
 import GuestLikedPost from "@/components/pages/listing-details/guest-liked."
@@ -87,7 +87,7 @@ const ListingItems = async ({ params }: ListingProps) => {
                         property={property}
                     />
 
-                    <AboutProperty
+                    <AboutListing
                         property={property}
                     />
                 </div>

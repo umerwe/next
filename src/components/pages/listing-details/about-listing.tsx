@@ -1,8 +1,8 @@
 import React from 'react'
-import FeaturesData from './features'
+import FeaturesList from './feature-list'
 import { Button } from '@/components/ui/button'
 
-const AboutProperty = ({ property }: DataProps) => {
+const AboutListing = ({ property }: DataProps) => {
     return (
         <div>
             <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">About this property</h2>
@@ -11,7 +11,7 @@ const AboutProperty = ({ property }: DataProps) => {
                     {property.title} located in {property.location}
                 </span>
             </p>
-            <FeaturesData property={property} />
+            <FeaturesList property={property} />
             <Button variant="outline" className="mt-4 md:mt-6 bg-transparent w-full sm:w-auto">
                 See all about this property
             </Button>
@@ -19,4 +19,4 @@ const AboutProperty = ({ property }: DataProps) => {
     )
 }
 
-export default AboutProperty
+export default AboutListing

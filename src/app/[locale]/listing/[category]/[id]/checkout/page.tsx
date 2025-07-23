@@ -1,9 +1,9 @@
 import React from "react";
 import { Star, Users, Bed, Wifi, Clock, Info } from 'lucide-react';
 import Header from "@/components/pages/listing-details/header";
-import CheckOutForm from "@/components/pages/check-out/check-out-form";
+import CheckOutForm from "@/components/forms/check-out-form";
 import PriceDetails from "@/components/pages/check-out/price-details";
-import PaymentForm from "@/components/pages/check-out/payment-form";
+import PaymentForm from "@/components/forms/payment-form";
 import CheckInOutTime from "@/components/pages/check-out/check-in-out-time";
 import { propertiesData } from "@/data/properties-data";
 import { vehiclesData } from "@/data/vehicles-data";

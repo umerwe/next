@@ -7,7 +7,7 @@ import {
   Wifi,
 } from "lucide-react";
 
-const FeaturesData = ({property}: DataProps) => {
+const FeaturesList = ({property}: DataProps) => {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 text-sm max-w-140">
             {
@@ -59,4 +59,4 @@ const FeaturesData = ({property}: DataProps) => {
     )
 }
 
-export default FeaturesData
+export default FeaturesList

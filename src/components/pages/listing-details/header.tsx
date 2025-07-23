@@ -12,11 +12,11 @@ const Header = ({ property,title }: HeaderProps) => {
     const router = useRouter();
     return (
         <div className="flex items-center justify-between pt-6 bg-white">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
                 <Button variant="ghost" className="bg-gray-100" onClick={() => router.back()}>
                     <ArrowLeft style={{ width: '18px', height: '18px' }} />
                 </Button>
-                <h1 className="text-lg font-semibold text-gray-900">{title}</h1>
+                <h1 className="text-md sm:text-lg font-semibold text-gray-900">{title}</h1>
             </div>
             {
                 property &&
